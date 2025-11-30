@@ -97,6 +97,13 @@ const projectData: Record<string, {
   },
 };
 
+// Generate static params for all project IDs
+export async function generateStaticParams() {
+  return Object.keys(projectData).map((id) => ({
+    id,
+  }));
+}
+
 export default async function ProjectDetail({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params;
   const project = projectData[id];
