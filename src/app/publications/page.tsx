@@ -128,7 +128,7 @@ export default function Publications() {
         <Tabs defaultValue="papers" className="space-y-8">
           <TabsList>
             <TabsTrigger value="papers">Research Papers</TabsTrigger>
-            <TabsTrigger value="writing">Writing</TabsTrigger>
+            <TabsTrigger value="writing">Blog Posts</TabsTrigger>
           </TabsList>
 
           {/* Research Papers */}
