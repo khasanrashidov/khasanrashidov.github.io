@@ -4,6 +4,7 @@ import './globals.css';
 import { Navigation } from '@/components/navigation';
 import { ThemeProvider } from '@/components/theme-provider';
 import { StructuredData } from '@/components/structured-data';
+import { Analytics } from '@/components/analytics';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -90,6 +91,7 @@ export default function RootLayout({
         <StructuredData />
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+        <Analytics />
         <ThemeProvider
           attribute="class"
           defaultTheme="light"
