@@ -77,7 +77,7 @@ export default function Contact() {
             </CardHeader>
             <CardContent className="space-y-2">
               <a
-                href="https://scholar.google.com"
+                href="https://scholar.google.com/citations?user=azx4R-cAAAAJ&hl=en"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block text-sm hover:text-primary transition-colors"
