@@ -45,14 +45,6 @@ export const metadata: Metadata = {
     title: 'Khasan Rashidov - Researcher & Full Stack Engineer',
     description:
       'Researcher and full-stack engineer building intelligent systems at the intersection of HCI, ML, and distributed systems.',
-    images: [
-      {
-        url: '/avatar.jpg',
-        width: 1200,
-        height: 630,
-        alt: 'Khasan Rashidov',
-      },
-    ],
   },
   twitter: {
     card: 'summary',
@@ -60,7 +52,6 @@ export const metadata: Metadata = {
     description:
       'Building intelligent systems at the intersection of HCI, ML, and distributed systems.',
     creator: '@khasanrashidov',
-    images: ['/avatar.jpg'],
   },
   robots: {
     index: true,
