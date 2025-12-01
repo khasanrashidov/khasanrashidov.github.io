@@ -136,7 +136,7 @@ export default function CV() {
                 Intelligent Canvas: AI-Powered Design Assistance Through Behavioral Learning
               </p>
               <p className="text-sm text-muted-foreground">
-                Your Name, Collaborator A, Collaborator B
+                Khasan Rashidov, Collaborator A, Collaborator B
               </p>
               <p className="text-sm text-muted-foreground">CHI &apos;24 • Best Paper Award</p>
             </div>
@@ -145,7 +145,7 @@ export default function CV() {
               <p className="text-sm font-medium leading-relaxed">
                 Conflict-Free Collaboration: Intent-Aware Merge Resolution in Real-Time IDEs
               </p>
-              <p className="text-sm text-muted-foreground">Your Name, Collaborator C</p>
+              <p className="text-sm text-muted-foreground">Khasan Rashidov, Collaborator C</p>
               <p className="text-sm text-muted-foreground">UIST &apos;23</p>
             </div>
 
@@ -154,7 +154,7 @@ export default function CV() {
                 Natural Gestures for 3D Modeling: A Participatory Design Approach
               </p>
               <p className="text-sm text-muted-foreground">
-                Your Name, Collaborator D, Collaborator E
+                Khasan Rashidov, Collaborator D, Collaborator E
               </p>
               <p className="text-sm text-muted-foreground">CHI &apos;23</p>
             </div>

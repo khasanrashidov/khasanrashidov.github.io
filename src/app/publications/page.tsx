@@ -10,7 +10,7 @@ const publications = [
     id: 1,
     type: 'conference',
     title: 'Intelligent Canvas: AI-Powered Design Assistance Through Behavioral Learning',
-    authors: 'Your Name, Collaborator A, Collaborator B',
+    authors: 'Khasan Rashidov, Collaborator A, Collaborator B',
     venue: "CHI '24",
     year: 2024,
     abstract:
@@ -22,7 +22,7 @@ const publications = [
     id: 2,
     type: 'conference',
     title: 'Conflict-Free Collaboration: Intent-Aware Merge Resolution in Real-Time IDEs',
-    authors: 'Your Name, Collaborator C',
+    authors: 'Khasan Rashidov, Collaborator C',
     venue: "UIST '23",
     year: 2023,
     abstract:
@@ -34,7 +34,7 @@ const publications = [
     id: 3,
     type: 'conference',
     title: 'Natural Gestures for 3D Modeling: A Participatory Design Approach',
-    authors: 'Your Name, Collaborator D, Collaborator E',
+    authors: 'Khasan Rashidov, Collaborator D, Collaborator E',
     venue: "CHI '23",
     year: 2023,
     abstract:
@@ -46,7 +46,7 @@ const publications = [
     id: 4,
     type: 'journal',
     title: 'Distributed Conflict Resolution in Collaborative Editing Systems',
-    authors: 'Your Name, Collaborator F',
+    authors: 'Khasan Rashidov, Collaborator F',
     venue: 'ACM TOCHI',
     year: 2022,
     abstract:
@@ -58,7 +58,7 @@ const publications = [
     id: 5,
     type: 'conference',
     title: 'Visual Explanations for Deep Learning Models: A Unified Framework',
-    authors: 'Your Name, Collaborator G, Collaborator H',
+    authors: 'Khasan Rashidov, Collaborator G, Collaborator H',
     venue: "VIS '21",
     year: 2021,
     abstract:
@@ -70,7 +70,7 @@ const publications = [
     id: 6,
     type: 'workshop',
     title: 'Accessibility-First Design Tools: Challenges and Opportunities',
-    authors: 'Your Name, Collaborator I',
+    authors: 'Khasan Rashidov, Collaborator I',
     venue: 'CHI Workshop on Inclusive Design',
     year: 2021,
     abstract:

@@ -15,8 +15,8 @@ export default function About() {
         {/* Header */}
         <div className="flex flex-col items-center gap-6 text-center sm:flex-row sm:items-start sm:gap-8 sm:text-left">
           <Avatar className="h-28 w-28 sm:h-32 sm:w-32">
-            <AvatarImage src="/avatar.jpg" alt="Your Name" />
-            <AvatarFallback className="text-2xl">YN</AvatarFallback>
+            <AvatarImage src="/avatar.jpg" alt="Khasan Rashidov" />
+            <AvatarFallback className="text-2xl">KR</AvatarFallback>
           </Avatar>
           <div className="flex-1 space-y-4">
             <h1 className="text-4xl font-semibold tracking-tight">About</h1>
