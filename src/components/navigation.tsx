@@ -1,20 +1,20 @@
-"use client";
+'use client';
 
-import Link from "next/link";
-import { useState } from "react";
-import { Menu, X } from "lucide-react";
-import { ThemeToggle } from "./theme-toggle";
-import { Button } from "./ui/button";
+import Link from 'next/link';
+import { useState } from 'react';
+import { Menu, X } from 'lucide-react';
+import { ThemeToggle } from './theme-toggle';
+import { Button } from './ui/button';
 
 export const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const links = [
-    { href: "/about", label: "About" },
-    { href: "/cv", label: "CV" },
-    { href: "/projects", label: "Projects" },
-    { href: "/publications", label: "Publications" },
-    { href: "/contact", label: "Contact" },
+    { href: '/about', label: 'About' },
+    { href: '/cv', label: 'CV' },
+    { href: '/projects', label: 'Projects' },
+    { href: '/publications', label: 'Publications' },
+    { href: '/contact', label: 'Contact' },
   ];
 
   return (
@@ -79,4 +79,3 @@ export const Navigation = () => {
     </nav>
   );
 };
-

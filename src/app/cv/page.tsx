@@ -1,12 +1,12 @@
-import { Badge } from "@/components/ui/badge";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Separator } from "@/components/ui/separator";
-import { Button } from "@/components/ui/button";
-import { Download } from "lucide-react";
-import type { Metadata } from "next";
+import { Badge } from '@/components/ui/badge';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Separator } from '@/components/ui/separator';
+import { Button } from '@/components/ui/button';
+import { Download } from 'lucide-react';
+import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "CV",
+  title: 'CV',
 };
 
 export default function CV() {
@@ -44,12 +44,8 @@ export default function CV() {
                 <p className="text-sm text-muted-foreground">
                   Dissertation: Intelligent Interaction Paradigms for AI-Assisted Creative Tools
                 </p>
-                <p className="text-sm text-muted-foreground">
-                  Advisor: Prof. [Name]
-                </p>
-                <p className="text-sm text-muted-foreground">
-                  GPA: 4.0/4.0
-                </p>
+                <p className="text-sm text-muted-foreground">Advisor: Prof. [Name]</p>
+                <p className="text-sm text-muted-foreground">GPA: 4.0/4.0</p>
               </CardContent>
             </Card>
 
@@ -62,9 +58,7 @@ export default function CV() {
                 <p className="text-sm text-muted-foreground">
                   Thesis: Distributed Systems for Real-Time Collaboration
                 </p>
-                <p className="text-sm text-muted-foreground">
-                  GPA: 3.9/4.0
-                </p>
+                <p className="text-sm text-muted-foreground">GPA: 3.9/4.0</p>
               </CardContent>
             </Card>
 
@@ -74,12 +68,8 @@ export default function CV() {
                 <p className="text-sm text-muted-foreground">University Name • 2015 – 2019</p>
               </CardHeader>
               <CardContent className="space-y-2">
-                <p className="text-sm text-muted-foreground">
-                  Summa Cum Laude
-                </p>
-                <p className="text-sm text-muted-foreground">
-                  GPA: 3.95/4.0
-                </p>
+                <p className="text-sm text-muted-foreground">Summa Cum Laude</p>
+                <p className="text-sm text-muted-foreground">GPA: 3.95/4.0</p>
               </CardContent>
             </Card>
           </div>
@@ -148,21 +138,15 @@ export default function CV() {
               <p className="text-sm text-muted-foreground">
                 Your Name, Collaborator A, Collaborator B
               </p>
-              <p className="text-sm text-muted-foreground">
-                CHI &apos;24 • Best Paper Award
-              </p>
+              <p className="text-sm text-muted-foreground">CHI &apos;24 • Best Paper Award</p>
             </div>
 
             <div className="space-y-2">
               <p className="text-sm font-medium leading-relaxed">
                 Conflict-Free Collaboration: Intent-Aware Merge Resolution in Real-Time IDEs
               </p>
-              <p className="text-sm text-muted-foreground">
-                Your Name, Collaborator C
-              </p>
-              <p className="text-sm text-muted-foreground">
-                UIST &apos;23
-              </p>
+              <p className="text-sm text-muted-foreground">Your Name, Collaborator C</p>
+              <p className="text-sm text-muted-foreground">UIST &apos;23</p>
             </div>
 
             <div className="space-y-2">
@@ -172,9 +156,7 @@ export default function CV() {
               <p className="text-sm text-muted-foreground">
                 Your Name, Collaborator D, Collaborator E
               </p>
-              <p className="text-sm text-muted-foreground">
-                CHI &apos;23
-              </p>
+              <p className="text-sm text-muted-foreground">CHI &apos;23</p>
             </div>
           </div>
         </section>
@@ -253,7 +235,9 @@ export default function CV() {
             </div>
             <div>
               <p className="text-sm font-medium">Graduate Student Mentor</p>
-              <p className="text-sm text-muted-foreground">Mentored 8 undergraduate and graduate students</p>
+              <p className="text-sm text-muted-foreground">
+                Mentored 8 undergraduate and graduate students
+              </p>
             </div>
           </div>
         </section>
@@ -261,4 +245,3 @@ export default function CV() {
     </main>
   );
 }
-

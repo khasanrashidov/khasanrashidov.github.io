@@ -1,12 +1,11 @@
-import Link from "next/link";
-import Image from "next/image";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import type { Metadata } from "next";
+import Link from 'next/link';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import { Badge } from '@/components/ui/badge';
+import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
+import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "Khasan Rashidov",
+  title: 'Khasan Rashidov',
 };
 
 export default function Home() {
@@ -27,7 +26,7 @@ export default function Home() {
               Researcher & Full Stack Engineer
             </p>
             <p className="max-w-2xl text-lg leading-relaxed text-muted-foreground">
-              Building intelligent systems at the intersection of human-computer interaction, 
+              Building intelligent systems at the intersection of human-computer interaction,
               machine learning, and distributed systems.
             </p>
           </div>
@@ -45,17 +44,15 @@ export default function Home() {
         <Link href="/projects" className="group">
           <Card className="h-full transition-all hover:shadow-md">
             <CardHeader>
-              <CardTitle className="group-hover:text-primary transition-colors">
-                Projects
-              </CardTitle>
+              <CardTitle className="group-hover:text-primary transition-colors">Projects</CardTitle>
               <CardDescription>
                 Research and engineering work across HCI, AI, and systems design
               </CardDescription>
             </CardHeader>
             <CardContent>
               <p className="text-sm text-muted-foreground">
-                Explore recent projects including intelligent interfaces, 
-                distributed systems, and human-AI collaboration tools.
+                Explore recent projects including intelligent interfaces, distributed systems, and
+                human-AI collaboration tools.
               </p>
             </CardContent>
           </Card>
@@ -67,14 +64,12 @@ export default function Home() {
               <CardTitle className="group-hover:text-primary transition-colors">
                 Publications
               </CardTitle>
-              <CardDescription>
-                Peer-reviewed research and technical writing
-              </CardDescription>
+              <CardDescription>Peer-reviewed research and technical writing</CardDescription>
             </CardHeader>
             <CardContent>
               <p className="text-sm text-muted-foreground">
-                Papers published in CHI, UIST, and other top-tier venues 
-                exploring novel interaction paradigms.
+                Papers published in CHI, UIST, and other top-tier venues exploring novel interaction
+                paradigms.
               </p>
             </CardContent>
           </Card>
@@ -83,17 +78,12 @@ export default function Home() {
         <Link href="/about" className="group">
           <Card className="h-full transition-all hover:shadow-md">
             <CardHeader>
-              <CardTitle className="group-hover:text-primary transition-colors">
-                About
-              </CardTitle>
-              <CardDescription>
-                Background, experience, and research interests
-              </CardDescription>
+              <CardTitle className="group-hover:text-primary transition-colors">About</CardTitle>
+              <CardDescription>Background, experience, and research interests</CardDescription>
             </CardHeader>
             <CardContent>
               <p className="text-sm text-muted-foreground">
-                Learn more about my academic journey, research philosophy, 
-                and areas of expertise.
+                Learn more about my academic journey, research philosophy, and areas of expertise.
               </p>
             </CardContent>
           </Card>
@@ -102,17 +92,12 @@ export default function Home() {
         <Link href="/contact" className="group">
           <Card className="h-full transition-all hover:shadow-md">
             <CardHeader>
-              <CardTitle className="group-hover:text-primary transition-colors">
-                Contact
-              </CardTitle>
-              <CardDescription>
-                Get in touch for collaborations
-              </CardDescription>
+              <CardTitle className="group-hover:text-primary transition-colors">Contact</CardTitle>
+              <CardDescription>Get in touch for collaborations</CardDescription>
             </CardHeader>
             <CardContent>
               <p className="text-sm text-muted-foreground">
-                Open to research collaborations, speaking opportunities, 
-                and consulting engagements.
+                Open to research collaborations, speaking opportunities, and consulting engagements.
               </p>
             </CardContent>
           </Card>

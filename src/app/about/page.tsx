@@ -1,11 +1,11 @@
-import { Badge } from "@/components/ui/badge";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Separator } from "@/components/ui/separator";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import type { Metadata } from "next";
+import { Badge } from '@/components/ui/badge';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Separator } from '@/components/ui/separator';
+import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
+import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "About",
+  title: 'About',
 };
 
 export default function About() {
@@ -33,18 +33,18 @@ export default function About() {
           <h2 className="text-2xl font-semibold tracking-tight">Background</h2>
           <div className="space-y-4 text-muted-foreground leading-relaxed">
             <p>
-              I&apos;m a researcher working at the intersection of human-computer interaction, 
-              machine learning, and systems design. My work focuses on creating intelligent 
+              I&apos;m a researcher working at the intersection of human-computer interaction,
+              machine learning, and systems design. My work focuses on creating intelligent
               interfaces that enhance human decision-making and creativity.
             </p>
             <p>
-              Currently pursuing a Ph.D. at [University], where I explore novel interaction 
-              paradigms for AI-assisted tools. Previously, I worked on distributed systems 
-              at [Company] and contributed to open-source projects in the ML ecosystem.
+              Currently pursuing a Ph.D. at [University], where I explore novel interaction
+              paradigms for AI-assisted tools. Previously, I worked on distributed systems at
+              [Company] and contributed to open-source projects in the ML ecosystem.
             </p>
             <p>
-              My research has been published in top-tier venues including CHI, UIST, and 
-              CSCW, and I&apos;ve collaborated with labs at MIT, Stanford, and CMU.
+              My research has been published in top-tier venues including CHI, UIST, and CSCW, and
+              I&apos;ve collaborated with labs at MIT, Stanford, and CMU.
             </p>
           </div>
         </section>
@@ -92,8 +92,8 @@ export default function About() {
               </CardHeader>
               <CardContent>
                 <p className="text-sm text-muted-foreground">
-                  Developed novel ML models for user intent prediction in collaborative 
-                  editing environments.
+                  Developed novel ML models for user intent prediction in collaborative editing
+                  environments.
                 </p>
               </CardContent>
             </Card>
@@ -127,4 +127,3 @@ export default function About() {
     </main>
   );
 }
-

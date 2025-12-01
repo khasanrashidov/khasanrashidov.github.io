@@ -1,9 +1,9 @@
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Separator } from "@/components/ui/separator";
-import type { Metadata } from "next";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import { Separator } from '@/components/ui/separator';
+import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "Contact",
+  title: 'Contact',
 };
 
 export default function Contact() {
@@ -25,11 +25,13 @@ export default function Contact() {
           <Card>
             <CardHeader>
               <CardTitle>Email</CardTitle>
-              <CardDescription>Best for detailed inquiries and collaboration proposals</CardDescription>
+              <CardDescription>
+                Best for detailed inquiries and collaboration proposals
+              </CardDescription>
             </CardHeader>
             <CardContent>
-              <a 
-                href="mailto:khasanrashidov2002@gmail.com" 
+              <a
+                href="mailto:khasanrashidov2002@gmail.com"
                 className="text-lg hover:text-primary transition-colors"
               >
                 khasanrashidov2002@gmail.com
@@ -43,9 +45,9 @@ export default function Contact() {
               <CardDescription>Publications and citation metrics</CardDescription>
             </CardHeader>
             <CardContent className="space-y-2">
-              <a 
-                href="https://scholar.google.com" 
-                target="_blank" 
+              <a
+                href="https://scholar.google.com"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="block text-sm hover:text-primary transition-colors"
               >
@@ -60,35 +62,35 @@ export default function Contact() {
               <CardDescription>Connect on academic and professional platforms</CardDescription>
             </CardHeader>
             <CardContent className="space-y-2">
-              <a 
-                href="https://www.linkedin.com/in/khasanr/" 
-                target="_blank" 
+              <a
+                href="https://www.linkedin.com/in/khasanr/"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="block text-sm hover:text-primary transition-colors"
               >
                 LinkedIn →
               </a>
-              <a 
-                href="https://github.com/khasanrashidov" 
-                target="_blank" 
+              <a
+                href="https://github.com/khasanrashidov"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="block text-sm hover:text-primary transition-colors"
               >
                 GitHub →
               </a>
 
-              <a 
-                href="https://developers.google.com/profile/u/khasan" 
-                target="_blank" 
+              <a
+                href="https://developers.google.com/profile/u/khasan"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="block text-sm hover:text-primary transition-colors"
               >
                 Google Developers →
               </a>
 
-              <a 
-                href="https://x.com/khasanrashidov" 
-                target="_blank" 
+              <a
+                href="https://x.com/khasanrashidov"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="block text-sm hover:text-primary transition-colors"
               >
@@ -104,21 +106,20 @@ export default function Contact() {
         <div className="space-y-4">
           <h2 className="text-2xl font-semibold tracking-tight">Office Hours</h2>
           <p className="text-muted-foreground leading-relaxed">
-            I hold virtual office hours on Thursdays from 2-4 PM EST for students and 
-            early-career researchers. Email to schedule a slot.
+            I hold virtual office hours on Thursdays from 2-4 PM EST for students and early-career
+            researchers. Email to schedule a slot.
           </p>
         </div>
 
         <div className="space-y-4">
           <h2 className="text-2xl font-semibold tracking-tight">Speaking & Media</h2>
           <p className="text-muted-foreground leading-relaxed">
-            Available for invited talks, podcast interviews, and panel discussions on topics 
-            related to HCI, AI, and systems design. Please include event details and expected 
-            audience in your inquiry.
+            Available for invited talks, podcast interviews, and panel discussions on topics related
+            to HCI, AI, and systems design. Please include event details and expected audience in
+            your inquiry.
           </p>
         </div>
       </div>
     </main>
   );
 }
-
