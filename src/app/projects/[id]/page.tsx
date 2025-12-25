@@ -17,105 +17,213 @@ const projectData: Record<
     links?: { label: string; href: string }[];
   }
 > = {
-  'intelligent-canvas': {
-    title: 'Intelligent Canvas',
+  moliyachi: {
+    title: 'Moliyachi',
     description:
-      'An AI-powered design tool that learns from user behavior to suggest contextual improvements and automate repetitive tasks.',
-    tags: ['HCI', 'Machine Learning', 'Design Tools'],
-    year: '2024',
+      'AI-powered personal finance platform integrated into Agrobank Mobile app that transforms banking data into actionable financial guidance.',
+    tags: [
+      'AI',
+      'Personal Finance',
+      'Predictive Analytics',
+      'LLMs',
+      'LangChain',
+      'Python',
+      'Super App Integration',
+      'Next.js',
+      'Tailwind CSS',
+      'Recharts',
+      'Lucide React',
+      'TypeScript',
+      'Mobile First',
+      'Flask',
+      'SQLAlchemy',
+      'PostgreSQL',
+      'REST API',
+      'Mathematical computations',
+      'OpenAI GPT-5.1/4.1/4o',
+      'Open-source LLM models',
+      'Custom Rules and Instructions',
+      'Machine Learning',
+      'RAG',
+      'Vercel',
+      'Supabase',
+      'Render',
+      'LangSmith',
+    ],
+    year: 'November 2025 – December 2025',
     problem:
-      'Designers spend significant time on repetitive tasks and struggle to maintain consistency across complex projects. Existing tools lack contextual awareness of design intent.',
+      'A significant number of Agrobank\'s customers live on a strict salary cycle, facing stress and uncertainty every month. Key challenges include aggressive spending after salary arrival, mid-month financial stress and uncertainty, no visibility into spending behavior, lack of personalized budgeting guidance, and current banking apps that provide transactions but not intelligence. Users need a way to understand their financial behavior—not just view their balance.',
     approach:
-      'Developed a machine learning system that observes user interactions, learns design patterns, and provides intelligent suggestions. Implemented using transformer-based models for pattern recognition and a novel interaction paradigm for accepting/rejecting suggestions.',
+      'Developed Moliyachi, a smart financial assistant fully embedded into Agrobank Mobile that transforms it from a transaction tool into a financial partner. Key features include: AI Spending Insights providing short, actionable explanations of where money goes; Smart Monthly Planning with warnings when spending is too fast and balance predictions; Financial Health Score (0–100) explaining financial stability; Goal Planning where AI calculates timelines and suggests improvements; Personalized Recommendations based on spending patterns, habits, income, and goals; Agrobank Product Matching suggesting Microloans, Deposits, Savings, and Installment options; and AI Shop Agent for finding products with AI-powered recommendations, installment options via Opencard by Agrobank, price comparisons, and personalized insights.',
     outcome:
-      'User studies showed 40% reduction in time spent on repetitive tasks and improved design consistency. Published at CHI 2024. System is being piloted by 3 design teams.',
+      'Helping individuals and families improve financial decision-making, reduce stress, and better manage budgets. Selected as a finalist in the AI500 Hackathon 2025 (Top 50 out of 1,345 teams). The product received interest from Agrobank for potential acquisition.',
     links: [
-      { label: 'Paper (PDF)', href: '#' },
-      { label: 'Demo Video', href: '#' },
-      { label: 'GitHub', href: '#' },
+      { label: 'Demo', href: 'https://moliyachi-landing.vercel.app/' },
+      { label: 'Hackathon Link', href: 'https://ai500.agrobank.uz/' },
+      { label: 'GitHub', href: 'https://github.com/khasanrashidov/Fast-Forward-AI500' },
     ],
   },
-  'collaborative-ide': {
-    title: 'Collaborative IDE',
-    description: 'Real-time collaborative coding environment with intelligent conflict resolution.',
-    tags: ['Systems', 'HCI', 'Distributed Systems'],
-    year: '2023',
-    problem:
-      "Real-time collaborative coding suffers from merge conflicts and lack of awareness of collaborators' intent, leading to frustration and lost work.",
-    approach:
-      'Built a distributed system using CRDTs for conflict-free replication and developed an ML model to predict and prevent conflicts based on code context and user behavior.',
-    outcome:
-      'Reduced merge conflicts by 75% in user studies. System handles 100+ concurrent users with sub-100ms latency. Published at UIST 2023.',
-    links: [
-      { label: 'Paper (PDF)', href: '#' },
-      { label: 'Live Demo', href: '#' },
-    ],
-  },
-  'gesture-interface': {
-    title: 'Gesture-Based Interface',
-    description: 'Novel interaction paradigm using computer vision and ML for 3D modeling.',
-    tags: ['HCI', 'Computer Vision', '3D Graphics'],
-    year: '2023',
-    problem:
-      'Traditional 3D modeling interfaces have steep learning curves and require specialized hardware, limiting accessibility.',
-    approach:
-      'Developed a computer vision system using MediaPipe and custom ML models to recognize natural hand gestures. Created an intuitive gesture vocabulary through participatory design sessions.',
-    outcome:
-      'Novice users achieved proficiency 3x faster than with traditional tools. System works with standard webcams. Presented at CHI 2023.',
-    links: [
-      { label: 'Paper (PDF)', href: '#' },
-      { label: 'Video Demo', href: '#' },
-    ],
-  },
-  'accessibility-toolkit': {
-    title: 'Accessibility Toolkit',
-    description: 'Open-source toolkit for building accessible web applications.',
-    tags: ['Accessibility', 'Web', 'Open Source'],
-    year: '2022',
-    problem:
-      'Web developers lack tools for real-time accessibility testing and often discover issues late in development.',
-    approach:
-      'Created an open-source library with automated testing, real-time feedback, and remediation suggestions. Integrated with popular frameworks and CI/CD pipelines.',
-    outcome:
-      'Adopted by 50+ companies. 10k+ GitHub stars. Reduced accessibility issues by 60% in adopting teams.',
-    links: [
-      { label: 'GitHub', href: '#' },
-      { label: 'Documentation', href: '#' },
-      { label: 'NPM Package', href: '#' },
-    ],
-  },
-  'data-viz-library': {
-    title: 'Data Visualization Library',
-    description: 'Declarative library for creating interactive, accessible data visualizations.',
-    tags: ['Visualization', 'JavaScript', 'Open Source'],
-    year: '2022',
-    problem:
-      'Existing visualization libraries require extensive code and often produce inaccessible outputs.',
-    approach:
-      'Built a declarative API inspired by Vega-Lite with built-in accessibility features. Optimized for performance using WebGL rendering.',
-    outcome:
-      'Used in 100+ projects. All visualizations are keyboard-navigable and screen-reader friendly by default.',
-    links: [
-      { label: 'GitHub', href: '#' },
-      { label: 'Examples', href: '#' },
-    ],
-  },
-  'ml-explainability': {
-    title: 'ML Explainability Tool',
+  dassyor: {
+    title: 'Dassyor',
     description:
-      'Interactive tool for understanding ML model predictions through visual explanations.',
-    tags: ['Machine Learning', 'Visualization', 'Interpretability'],
-    year: '2021',
+      'AI-driven platform empowering first-time founders, students, and youth to quickly transform startup ideas into real products through structured roadmaps.',
+    tags: [
+      'AI',
+      '.NET 8',
+      'ASP.NET Web API',
+      'Angular 18',
+      'RxJS',
+      'NgRx',
+      'Python',
+      'React',
+      'GCP',
+      'OpenAI Assistants API',
+      'OpenAI Agents',
+      'REST',
+      'WebSocket',
+      'Docker',
+    ],
+    year: 'March 2025 – July 2025',
     problem:
-      'ML practitioners struggle to debug and understand model behavior, especially for complex deep learning models.',
+      'First-time founders, students, and youth lack structured guidance to transform startup ideas into real products. Unlike traditional incubators or lecture-based courses, there\'s a need for hands-on, efficient startup building without equity demands.',
     approach:
-      'Developed interactive visualizations using SHAP values, attention mechanisms, and counterfactual explanations. Created a unified interface for multiple explanation methods.',
+      'Built an AI-driven platform (dassyor.com) providing structured, personalized, multi-phase roadmaps guiding users through idea validation, MVP development, and future marketing phases. Developed using .NET 8, ASP.NET Web API, Angular 18 (Signals, RxJS, NgRx), Python, React, GCP, OpenAI Assistants API, OpenAI Agents, REST, WebSocket, and Docker. Eliminated equity requirements and focused on efficient, hands-on startup building.',
     outcome:
-      'Helped identify and fix biases in 5 production models. Published at VIS 2021. Open-sourced with 5k+ GitHub stars.',
+      'Platform aligns with Uzbekistan\'s governmental efforts to promote youth entrepreneurship and startup innovation. Provides accessible startup incubation without equity requirements, enabling rapid transformation of ideas into real products.',
     links: [
-      { label: 'Paper (PDF)', href: '#' },
-      { label: 'GitHub', href: '#' },
-      { label: 'Interactive Demo', href: '#' },
+      { label: 'Website', href: 'https://dassyor.com' },
+      { label: 'GitHub Repository', href: 'https://github.com/khasanrashidov/dassyor-project' },
+    ],
+  },
+  sally: {
+    title: 'Sally',
+    description:
+      'AI assistant that accelerates pre-sales and Product Development Workshop phases by transforming client meeting transcripts into actionable project plans.',
+    tags: ['NLP', 'AI Assistant', '.NET', 'Vector Database', 'Project Planning Automation', 'Document Generation'],
+    year: 'September 2024',
+    problem:
+      'The pre-sales and Product Development Workshop (PDW) phases require weeks of manual effort to transform client meeting transcripts into actionable project plans, solution ideas, and detailed documentation.',
+    approach:
+      'Developed an AI assistant using NLP, .NET, and Vector Database technology that automatically processes client meeting transcripts, generates multiple solution ideas, supports sales and technical lead approvals, and produces detailed documentation including feature breakdowns, estimates, team structures, and development roadmaps.',
+    outcome:
+      'By automating these tasks, Sally reduces weeks of manual effort and enables faster, clearer decision-making for project teams and clients.',
+  },
+  'autonomous-robot-slam': {
+    title: 'Autonomous Robot SLAM and Navigation — Capstone Design Project',
+    description:
+      'Capstone design project developing an autonomous navigation system for a TurtleBot mobile robot with SLAM, localization, and obstacle avoidance.',
+    tags: [
+      'Robotics',
+      'SLAM',
+      'Autonomous Navigation',
+      'Localization',
+      'Obstacle Avoidance',
+      'Motion Planning',
+      'C/C++',
+      'Qt',
+      'Ubuntu',
+      'Linux',
+      'ROS',
+    ],
+    year: 'March 2024',
+    problem:
+      'Autonomous mobile robots require robust systems for simultaneous localization and mapping (SLAM), pose estimation, obstacle avoidance, and waypoint-based navigation under real-world constraints.',
+    approach:
+      'Developed an autonomous navigation system for a TurtleBot mobile robot, addressing core robotics challenges including SLAM, pose estimation, obstacle avoidance, and waypoint-based navigation. The project integrated sensing, localization, and navigation into a cohesive autonomous system.',
+    outcome:
+      'The robot autonomously explored and mapped its environment, localized itself within the map, and navigated safely toward predefined waypoints under real-world constraints. Achieved first-place ranking among capstone teams at Inha University in Tashkent.',
+  },
+  huquqai: {
+    title: 'HuquqAI — Legal Assistant',
+    description:
+      'AI-powered legal assistant leveraging open legal data to provide users with accurate legal guidance using OpenAI GPT-4 Turbo.',
+    tags: [
+      'Python',
+      'Flask',
+      'Flask-SQLAlchemy',
+      'PyJWT',
+      'React',
+      'JavaScript',
+      'TypeScript',
+      'Bootstrap',
+      'Material UI',
+      'OpenAI Assistants API',
+      'AWS',
+      'Docker',
+      'PostgreSQL',
+    ],
+    year: 'February 2024',
+    problem:
+      'Legal information is often inaccessible and difficult to navigate. Users struggle to find accurate legal guidance from reliable sources including the constitution, laws, and social codes.',
+    approach:
+      'Built a legal assistant leveraging open legal data, including the constitution, laws, and social codes. Utilized the OpenAI Assistants API (powered by GPT-4 Turbo) to interpret user queries and deliver reliable responses. Developed using Python, Flask, Flask-SQLAlchemy, PyJWT, React, JavaScript, TypeScript, Bootstrap, Material UI, OpenAI Assistants API, AWS, Docker, and PostgreSQL.',
+    outcome:
+      'The platform simplifies legal research, making information more accessible for both individuals and organizations while maintaining high standards of accuracy. Supports responses in English and Russian.',
+  },
+  auctionify: {
+    title: 'Auctionify',
+    description:
+      'Interactive auction platform that enables users to buy and sell unique products through real-time bidding with seamless bidding, post-auction chat, and subscription-based analytics.',
+    tags: [
+      'ASP.NET Web API',
+      '.NET C#',
+      'Angular',
+      'Material UI',
+      'TypeScript',
+      'SignalR',
+      'CQRS + MediatR',
+      'MS SQL Server',
+      'Azure Blob Storage',
+      'xUnit',
+      'Quartz.NET',
+      'NLog',
+      'Google Maps API',
+      'QuestPDF',
+      'ApexCharts',
+      'GitHub Actions',
+      'CI/CD',
+      'JWT',
+    ],
+    year: 'September 2023 – March 2024',
+    problem:
+      'Existing auction platforms lack real-time bidding capabilities and engaging user experiences. Users need seamless bidding experiences, post-auction communication, and analytics to make informed decisions.',
+    approach:
+      'Developed a full-stack web application using ASP.NET Web API, .NET C#, Angular, Material UI, TypeScript, HTML, SCSS, JSON, REST, CQRS + MediatR, MS SQL Server, Azure Blob Storage, SignalR for real-time bidding, Quartz.NET for scheduling, NLog for logging, Google Authentication, Google Maps API, Google Places API, QuestPDF for document generation, ApexCharts for analytics, GitHub Actions for CI/CD, and JWT authorization. Implemented post-auction chat communication features and a pro-subscription model offering analytics.',
+    outcome:
+      'Delivered an engaging and reliable user experience with real-time bidding capabilities. Platform provides seamless bidding workflows, post-auction communication, and subscription-based analytics. Features user-friendly exploration and transaction processes. Developed as an internship project at Vention.',
+    links: [
+      { label: 'GitHub Repository', href: 'https://github.com/khasanrashidov/Auctionify' },
+    ],
+  },
+  'utilization-reports': {
+    title: 'Employee Utilization Reports',
+    description:
+      'Web API solution that collects and processes employee worklogs from different company departments via Atlassian Tempo API, generating weekly reports and supporting multiple output formats.',
+    tags: [
+      'C#',
+      'ASP.NET Web API',
+      'Azure Cloud Platform',
+      'Azure Functions',
+      'In-Memory Caching',
+      'REST',
+      'JSON',
+      'XML',
+      'CSV',
+      'xUnit',
+      'NLog',
+      'Handlebars.NET',
+      'Polly',
+    ],
+    year: 'June 2023 – August 2023',
+    problem:
+      'Organizations struggle to track employee utilization across multiple departments. Manual collection and processing of worklogs from various sources is time-consuming and error-prone. Management needs automated insights and flexible reporting formats.',
+    approach:
+      'Built a modular Web API solution using C#, ASP.NET Web API, Azure Cloud Platform, Azure Functions, In-Memory Caching, REST, JSON, XML, CSV, xUnit for testing, NLog for logging, and Handlebars.NET for templating. Integrated with the Atlassian Tempo API to collect employee worklogs from different company departments. Developed Azure Functions for automated weekly email reporting. Implemented support for multiple output formats (JSON, XML, CSV) for individual or team-based reporting across custom date periods. Used Polly for resilience patterns.',
+    outcome:
+      'Streamlined employee utilization tracking and enabled automated insights for management. The modular API can be integrated into various company systems, reducing manual effort and improving reporting accuracy. Generates weekly reports and sends worklogs to employees by email.',
+    links: [
+      { label: 'Web API Repository', href: 'https://github.com/khasanrashidov/utilization-reports' },
+      { label: 'Azure Function Repository', href: 'https://github.com/khasanrashidov/azure-function' },
     ],
   },
 };

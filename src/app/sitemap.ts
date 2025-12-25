@@ -15,12 +15,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   // Project pages
   const projectIds = [
-    'intelligent-canvas',
-    'collaborative-ide',
-    'gesture-interface',
-    'accessibility-toolkit',
-    'data-viz-library',
-    'ml-explainability',
+    'moliyachi',
+    'dassyor',
+    'sally',
+    'autonomous-robot-slam',
+    'huquqai',
+    'auctionify',
+    'utilization-reports',
   ];
 
   const projects = projectIds.map((id) => ({

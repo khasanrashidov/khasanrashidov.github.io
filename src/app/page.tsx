@@ -22,20 +22,20 @@ export default function Home() {
             <h1 className="text-4xl font-semibold tracking-tight md:text-5xl lg:text-6xl">
               Khasan Rashidov
             </h1>
-            <p className="text-xl text-muted-foreground md:text-2xl">
-              Researcher & Full Stack Engineer
-            </p>
+            <p className="text-xl text-muted-foreground md:text-2xl">Senior Software Engineer</p>
             <p className="max-w-2xl text-lg leading-relaxed text-muted-foreground">
-              Building intelligent systems at the intersection of human-computer interaction,
-              machine learning, and distributed systems.
+              Full-stack engineer specializing in .NET, Angular, Python, and AI-powered systems.
+              Building production-scale applications with a focus on cloud-native solutions,
+              intelligent automation, and scalable architecture.
             </p>
           </div>
         </div>
         <div className="flex flex-wrap gap-2">
-          <Badge variant="secondary">HCI</Badge>
-          <Badge variant="secondary">Machine Learning</Badge>
-          <Badge variant="secondary">Systems</Badge>
-          <Badge variant="secondary">Design</Badge>
+          <Badge variant="secondary">.NET</Badge>
+          <Badge variant="secondary">Angular</Badge>
+          <Badge variant="secondary">Python</Badge>
+          <Badge variant="secondary">AI/ML</Badge>
+          <Badge variant="secondary">Cloud Computing</Badge>
         </div>
       </section>
 
@@ -46,13 +46,13 @@ export default function Home() {
             <CardHeader>
               <CardTitle className="group-hover:text-primary transition-colors">Projects</CardTitle>
               <CardDescription>
-                Research and engineering work across HCI, AI, and systems design
+                AI-powered applications, full-stack systems, and innovative software solutions
               </CardDescription>
             </CardHeader>
             <CardContent>
               <p className="text-sm text-muted-foreground">
-                Explore recent projects including intelligent interfaces, distributed systems, and
-                human-AI collaboration tools.
+                Explore projects including AI assistants, financial analytics platforms, startup
+                incubation tools, and autonomous robotics systems.
               </p>
             </CardContent>
           </Card>
@@ -64,12 +64,12 @@ export default function Home() {
               <CardTitle className="group-hover:text-primary transition-colors">
                 Publications
               </CardTitle>
-              <CardDescription>Peer-reviewed research and technical writing</CardDescription>
+              <CardDescription>Technical writing and future publications</CardDescription>
             </CardHeader>
             <CardContent>
               <p className="text-sm text-muted-foreground">
-                Papers published in CHI, UIST, and other top-tier venues exploring novel interaction
-                paradigms.
+                Technical articles and blog posts about software engineering, AI integration, and
+                full-stack development.
               </p>
             </CardContent>
           </Card>
@@ -79,11 +79,12 @@ export default function Home() {
           <Card className="h-full transition-all hover:shadow-md">
             <CardHeader>
               <CardTitle className="group-hover:text-primary transition-colors">About</CardTitle>
-              <CardDescription>Background, experience, and research interests</CardDescription>
+              <CardDescription>Background, experience, and technical expertise</CardDescription>
             </CardHeader>
             <CardContent>
               <p className="text-sm text-muted-foreground">
-                Learn more about my academic journey, research philosophy, and areas of expertise.
+                Learn more about my education, professional experience, and technical skills in
+                software engineering and AI.
               </p>
             </CardContent>
           </Card>
@@ -93,11 +94,12 @@ export default function Home() {
           <Card className="h-full transition-all hover:shadow-md">
             <CardHeader>
               <CardTitle className="group-hover:text-primary transition-colors">Contact</CardTitle>
-              <CardDescription>Get in touch for collaborations</CardDescription>
+              <CardDescription>Get in touch for opportunities</CardDescription>
             </CardHeader>
             <CardContent>
               <p className="text-sm text-muted-foreground">
-                Open to research collaborations, speaking opportunities, and consulting engagements.
+                Open to software engineering opportunities, technical collaborations, and consulting
+                engagements.
               </p>
             </CardContent>
           </Card>

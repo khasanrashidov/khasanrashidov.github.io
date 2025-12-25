@@ -19,21 +19,24 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL('https://khasanrashidov.github.io'),
   title: {
-    default: 'Khasan Rashidov - Researcher & Full Stack Engineer',
+    default: 'Khasan Rashidov - Senior Software Engineer',
     template: '%s | Khasan Rashidov',
   },
   description:
-    'Researcher and full-stack engineer building intelligent systems at the intersection of human-computer interaction, machine learning, and distributed systems.',
+    'Senior Software Engineer specializing in .NET, Angular, and AI-powered systems. Building production-scale full-stack applications with cloud-native solutions.',
   keywords: [
     'Khasan Rashidov',
-    'HCI',
-    'Human-Computer Interaction',
+    'Senior Software Engineer',
+    '.NET',
+    'Angular',
+    'TypeScript',
+    'AI',
     'Machine Learning',
     'Full Stack Engineer',
-    'Researcher',
-    'Distributed Systems',
-    'AI',
+    'Azure',
     'Software Engineering',
+    'Tashkent',
+    'Uzbekistan',
   ],
   authors: [{ name: 'Khasan Rashidov' }],
   creator: 'Khasan Rashidov',
@@ -42,15 +45,15 @@ export const metadata: Metadata = {
     locale: 'en_US',
     url: 'https://khasanrashidov.github.io',
     siteName: 'Khasan Rashidov',
-    title: 'Khasan Rashidov - Researcher & Full Stack Engineer',
+    title: 'Khasan Rashidov - Senior Software Engineer',
     description:
-      'Researcher and full-stack engineer building intelligent systems at the intersection of HCI, ML, and distributed systems.',
+      'Senior Software Engineer specializing in .NET, Angular, and AI-powered systems. Building production-scale full-stack applications.',
   },
   twitter: {
     card: 'summary',
-    title: 'Khasan Rashidov - Researcher & Full Stack Engineer',
+    title: 'Khasan Rashidov - Senior Software Engineer',
     description:
-      'Building intelligent systems at the intersection of HCI, ML, and distributed systems.',
+      'Senior Software Engineer specializing in .NET, Angular, and AI-powered systems. Building production-scale applications.',
     creator: '@khasanrashidov',
   },
   robots: {

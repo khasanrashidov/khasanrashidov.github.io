@@ -1,5 +1,5 @@
 import { Badge } from '@/components/ui/badge';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Card, CardHeader, CardTitle } from '@/components/ui/card';
 import { Separator } from '@/components/ui/separator';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import type { Metadata } from 'next';
@@ -21,7 +21,8 @@ export default function About() {
           <div className="flex-1 space-y-4">
             <h1 className="text-4xl font-semibold tracking-tight">About</h1>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Researcher and engineer focused on building systems that amplify human capabilities.
+              Senior Software Engineer building production-scale full-stack applications with AI
+              integration and cloud-native solutions.
             </p>
           </div>
         </div>
@@ -33,18 +34,35 @@ export default function About() {
           <h2 className="text-2xl font-semibold tracking-tight">Background</h2>
           <div className="space-y-4 text-muted-foreground leading-relaxed">
             <p>
-              I&apos;m a researcher working at the intersection of human-computer interaction,
-              machine learning, and systems design. My work focuses on creating intelligent
-              interfaces that enhance human decision-making and creativity.
+              I&apos;m a Full Stack Software Engineer with 3+ years of commercial experience
+              building scalable and maintainable web applications using .NET, Python, and Angular.
+              Currently, I work as a Senior Software Engineer at Vention, where I design and develop
+              production-scale full-stack systems using Angular and ASP.NET Core. My work focuses on
+              building high-performance RESTful APIs, integrating AI-powered systems including LLMs
+              into production applications, and architecting cloud-native solutions on Microsoft
+              Azure.
             </p>
             <p>
-              Currently pursuing a Ph.D. at [University], where I explore novel interaction
-              paradigms for AI-assisted tools. Previously, I worked on distributed systems at
-              [Company] and contributed to open-source projects in the ML ecosystem.
+              I&apos;m familiar with cloud platforms like Azure and Google Cloud Platform (GCP),
+              including tools such as Azure Functions and Blob Storage. I&apos;m skilled in
+              designing and optimizing relational databases (SQL Server, PostgreSQL, MySQL) with a
+              good understanding of database design, query optimization, and principles like SOLID,
+              OOP, ACID, and FIRST. I focus on writing clean, efficient, and maintainable code.
             </p>
             <p>
-              My research has been published in top-tier venues including CHI, UIST, and CSCW, and
-              I&apos;ve collaborated with labs at MIT, Stanford, and CMU.
+              I graduated from Inha University in Tashkent with a Bachelor of Science in Computer
+              Science and Software Engineering, ranking 4th out of 300 students with a GPA of
+              4.27/4.50. During my studies, I was a member of the Dean&apos;s List and received
+              multiple Academic Excellence Scholarships.
+            </p>
+            <p>
+              I&apos;m experienced in Agile environments (Scrum, Kanban) and capable of integrating
+              AI-driven features into applications. I&apos;m a motivated team player who also works
+              well independently, always open to learning and exploring new technologies. My
+              experience spans full-stack development, AI integration, database optimization, and
+              cloud architecture. I&apos;ve worked on projects ranging from AI-powered financial
+              analytics platforms to autonomous robotics systems, and I&apos;m passionate about
+              building scalable, intelligent software solutions.
             </p>
           </div>
         </section>
@@ -55,14 +73,15 @@ export default function About() {
         <section className="space-y-6">
           <h2 className="text-2xl font-semibold tracking-tight">Research Interests</h2>
           <div className="flex flex-wrap gap-2">
-            <Badge variant="outline">Human-Computer Interaction</Badge>
-            <Badge variant="outline">Machine Learning</Badge>
-            <Badge variant="outline">Intelligent Interfaces</Badge>
-            <Badge variant="outline">Human-AI Collaboration</Badge>
-            <Badge variant="outline">Distributed Systems</Badge>
-            <Badge variant="outline">Design Tools</Badge>
-            <Badge variant="outline">Accessibility</Badge>
-            <Badge variant="outline">Information Visualization</Badge>
+            <Badge variant="outline">Full-Stack Development</Badge>
+            <Badge variant="outline">AI/ML Integration</Badge>
+            <Badge variant="outline">Cloud Architecture</Badge>
+            <Badge variant="outline">.NET & Angular</Badge>
+            <Badge variant="outline">Python</Badge>
+            <Badge variant="outline">Database Optimization</Badge>
+            <Badge variant="outline">Microservices</Badge>
+            <Badge variant="outline">DevOps</Badge>
+            <Badge variant="outline">Software Engineering</Badge>
           </div>
         </section>
 
@@ -74,52 +93,36 @@ export default function About() {
           <div className="space-y-6">
             <Card>
               <CardHeader>
-                <CardTitle className="text-lg">Ph.D. Candidate</CardTitle>
-                <p className="text-sm text-muted-foreground">University Name • 2021 – Present</p>
+                <CardTitle className="text-lg">Senior Software Engineer</CardTitle>
+                <p className="text-sm text-muted-foreground">Vention • August 2023 – Present</p>
               </CardHeader>
-              <CardContent>
-                <p className="text-sm text-muted-foreground">
-                  Researching intelligent interaction paradigms for AI-assisted creative tools.
-                  Advised by Prof. [Name].
-                </p>
-              </CardContent>
             </Card>
 
             <Card>
               <CardHeader>
-                <CardTitle className="text-lg">Research Intern</CardTitle>
-                <p className="text-sm text-muted-foreground">Tech Company • Summer 2023</p>
+                <CardTitle className="text-lg">Software Engineer Intern</CardTitle>
+                <p className="text-sm text-muted-foreground">LeverX • March 2023 – August 2023</p>
               </CardHeader>
-              <CardContent>
-                <p className="text-sm text-muted-foreground">
-                  Developed novel ML models for user intent prediction in collaborative editing
-                  environments.
-                </p>
-              </CardContent>
             </Card>
 
             <Card>
               <CardHeader>
-                <CardTitle className="text-lg">M.S. Computer Science</CardTitle>
-                <p className="text-sm text-muted-foreground">University Name • 2019 – 2021</p>
-              </CardHeader>
-              <CardContent>
+                <CardTitle className="text-lg">
+                  B.S. Computer Science and Software Engineering
+                </CardTitle>
                 <p className="text-sm text-muted-foreground">
-                  Thesis on distributed systems for real-time collaboration.
+                  Inha University in Tashkent • September 2020 – August 2024
                 </p>
-              </CardContent>
+              </CardHeader>
             </Card>
 
             <Card>
               <CardHeader>
-                <CardTitle className="text-lg">Software Engineer</CardTitle>
-                <p className="text-sm text-muted-foreground">Startup • 2017 – 2019</p>
-              </CardHeader>
-              <CardContent>
+                <CardTitle className="text-lg">Summer School Program</CardTitle>
                 <p className="text-sm text-muted-foreground">
-                  Built scalable backend systems and ML infrastructure.
+                  Inha University (Incheon, South Korea) • July 2023 – August 2023
                 </p>
-              </CardContent>
+              </CardHeader>
             </Card>
           </div>
         </section>

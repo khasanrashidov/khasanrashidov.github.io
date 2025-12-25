@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Separator } from '@/components/ui/separator';
 import { Button } from '@/components/ui/button';
-import { Check, Copy } from 'lucide-react';
+import { Check, Copy, ExternalLink, MapPin } from 'lucide-react';
 
 export default function Contact() {
   const [copied, setCopied] = useState(false);
@@ -22,7 +22,8 @@ export default function Contact() {
         <div className="space-y-4">
           <h1 className="text-4xl font-semibold tracking-tight">Contact</h1>
           <p className="text-lg text-muted-foreground leading-relaxed">
-            Open to research collaborations, speaking opportunities, and consulting engagements.
+            Open to software engineering opportunities, technical collaborations, and consulting
+            engagements.
           </p>
         </div>
 
@@ -41,8 +42,8 @@ export default function Contact() {
               <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
                 <a
                   href={`mailto:${email}`}
-                  className="text-lg hover:text-primary transition-colors break-all"
-              >
+                  className="text-base hover:text-primary transition-colors break-all"
+                >
                   {email}
                 </a>
                 <Button
@@ -72,6 +73,22 @@ export default function Contact() {
 
           <Card>
             <CardHeader>
+              <CardTitle>Phone</CardTitle>
+              <CardDescription>Available for calls and Telegram</CardDescription>
+            </CardHeader>
+            <CardContent className="space-y-4">
+              <a
+                href="tel:+998906756075"
+                className="text-base hover:text-primary transition-colors"
+              >
+                +998 90 675 60 75
+              </a>
+              <p className="text-sm text-muted-foreground">Tashkent, Uzbekistan</p>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
               <CardTitle>Academic Profile</CardTitle>
               <CardDescription>Publications and citation metrics</CardDescription>
             </CardHeader>
@@ -80,9 +97,10 @@ export default function Contact() {
                 href="https://scholar.google.com/citations?user=azx4R-cAAAAJ&hl=en"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block text-sm hover:text-primary transition-colors"
+                className="block text-sm hover:text-primary transition-colors flex items-center"
               >
-                Google Scholar →
+                Google Scholar
+                <ExternalLink className="ml-2 h-4 w-4" />
               </a>
             </CardContent>
           </Card>
@@ -97,35 +115,39 @@ export default function Contact() {
                 href="https://www.linkedin.com/in/khasanr/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block text-sm hover:text-primary transition-colors"
+                className="block text-sm hover:text-primary transition-colors flex items-center"
               >
-                LinkedIn →
+                LinkedIn
+                <ExternalLink className="ml-2 h-4 w-4" />
               </a>
               <a
                 href="https://github.com/khasanrashidov"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block text-sm hover:text-primary transition-colors"
+                className="block text-sm hover:text-primary transition-colors flex items-center"
               >
-                GitHub →
+                GitHub
+                <ExternalLink className="ml-2 h-4 w-4" />
               </a>
 
               <a
                 href="https://developers.google.com/profile/u/khasan"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block text-sm hover:text-primary transition-colors"
+                className="block text-sm hover:text-primary transition-colors flex items-center"
               >
-                Google Developers →
+                Google Developers
+                <ExternalLink className="ml-2 h-4 w-4" />
               </a>
 
               <a
                 href="https://x.com/khasanrashidov"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block text-sm hover:text-primary transition-colors"
+                className="block text-sm hover:text-primary transition-colors flex items-center"
               >
-                Twitter / X →
+                Twitter / X
+                <ExternalLink className="ml-2 h-4 w-4" />
               </a>
             </CardContent>
           </Card>
@@ -135,19 +157,10 @@ export default function Contact() {
 
         {/* Additional Info */}
         <div className="space-y-4">
-          <h2 className="text-2xl font-semibold tracking-tight">Office Hours</h2>
-          <p className="text-muted-foreground leading-relaxed">
-            I hold virtual office hours on Thursdays from 2-4 PM EST for students and early-career
-            researchers. Email to schedule a slot.
-          </p>
-        </div>
-
-        <div className="space-y-4">
-          <h2 className="text-2xl font-semibold tracking-tight">Speaking & Media</h2>
-          <p className="text-muted-foreground leading-relaxed">
-            Available for invited talks, podcast interviews, and panel discussions on topics related
-            to HCI, AI, and systems design. Please include event details and expected audience in
-            your inquiry.
+          <h2 className="text-2xl font-semibold tracking-tight">Location</h2>
+          <p className="text-muted-foreground leading-relaxed flex items-center">
+            <MapPin className="mr-2 h-4 w-4 text-primary" />
+            Tashkent, Uzbekistan
           </p>
         </div>
       </div>
