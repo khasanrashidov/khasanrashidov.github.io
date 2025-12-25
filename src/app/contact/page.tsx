@@ -42,7 +42,7 @@ export default function Contact() {
                 <a
                   href={`mailto:${email}`}
                   className="text-lg hover:text-primary transition-colors break-all"
-                >
+              >
                   {email}
                 </a>
                 <Button
