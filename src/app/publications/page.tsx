@@ -23,7 +23,7 @@ const blogPosts = [
     title: 'Why is Python One of the Best Programming Languages for Software Engineers?',
     date: 'December 28, 2022',
     excerpt:
-      'An analysis of Python as a programming language for software engineers, covering its advantages, ease of learning, versatility, and why it\'s essential for developers in today\'s technology industry.',
+      "An analysis of Python as a programming language for software engineers, covering its advantages, ease of learning, versatility, and why it's essential for developers in today's technology industry.",
     url: 'https://khasanr.blogspot.com/2022/12/why-is-python-one-of-best-programming.html',
     tags: ['Python', 'Programming', 'Software Engineering', 'Computer Science'],
   },

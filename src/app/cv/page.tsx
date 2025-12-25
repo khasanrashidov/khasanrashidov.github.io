@@ -22,11 +22,7 @@ export default function CV() {
             </p>
           </div>
           <Button asChild>
-            <a
-              href="https://rxresu.me/khasanr/software-engineer"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <a href="/CV.pdf" target="_blank" rel="noopener noreferrer">
               <Download className="mr-2 h-4 w-4" />
               Download PDF
             </a>
