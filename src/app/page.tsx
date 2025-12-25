@@ -24,9 +24,9 @@ export default function Home() {
             </h1>
             <p className="text-xl text-muted-foreground md:text-2xl">Senior Software Engineer</p>
             <p className="max-w-2xl text-lg leading-relaxed text-muted-foreground">
-              Full-stack engineer specializing in .NET, Angular, Python, and AI-powered systems.
-              Building production-scale applications with a focus on cloud-native solutions,
-              intelligent automation, and scalable architecture.
+              Full-stack engineer specializing in .NET, Angular, TypeScript, Python, and AI-powered
+              systems. Building production-scale applications with a focus on cloud-native
+              solutions, intelligent automation, and scalable architecture.
             </p>
           </div>
         </div>

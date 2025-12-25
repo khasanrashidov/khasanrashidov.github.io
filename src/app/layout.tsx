@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     template: '%s | Khasan Rashidov',
   },
   description:
-    'Senior Software Engineer specializing in .NET, Angular, and AI-powered systems. Building production-scale full-stack applications with cloud-native solutions.',
+    'Senior Software Engineer specializing in .NET, Angular, TypeScript, Python, and AI-powered systems. Building production-scale full-stack applications with cloud-native solutions.',
   keywords: [
     'Khasan Rashidov',
     'Senior Software Engineer',
@@ -47,13 +47,13 @@ export const metadata: Metadata = {
     siteName: 'Khasan Rashidov',
     title: 'Khasan Rashidov - Senior Software Engineer',
     description:
-      'Senior Software Engineer specializing in .NET, Angular, and AI-powered systems. Building production-scale full-stack applications.',
+      'Senior Software Engineer specializing in .NET, Angular, TypeScript, Python, and AI-powered systems. Building production-scale full-stack applications.',
   },
   twitter: {
     card: 'summary',
     title: 'Khasan Rashidov - Senior Software Engineer',
     description:
-      'Senior Software Engineer specializing in .NET, Angular, and AI-powered systems. Building production-scale applications.',
+      'Senior Software Engineer specializing in .NET, Angular, TypeScript, Python, and AI-powered systems. Building production-scale applications.',
     creator: '@khasanrashidov',
   },
   robots: {

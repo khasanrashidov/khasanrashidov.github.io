@@ -7,7 +7,7 @@ export function StructuredData() {
     image: 'https://khasanrashidov.github.io/avatar.jpg',
     jobTitle: 'Senior Software Engineer',
     description:
-      'Senior Software Engineer specializing in .NET, Angular, and AI-powered systems. Building production-scale full-stack applications with cloud-native solutions.',
+      'Senior Software Engineer specializing in .NET, Angular, TypeScript, Python, and AI-powered systems. Building production-scale full-stack applications with cloud-native solutions.',
     address: {
       '@type': 'PostalAddress',
       addressLocality: 'Tashkent',
