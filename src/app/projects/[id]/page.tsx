@@ -52,7 +52,7 @@ const projectData: Record<
     ],
     year: 'November 2025 – December 2025',
     problem:
-      'A significant number of Agrobank\'s customers live on a strict salary cycle, facing stress and uncertainty every month. Key challenges include aggressive spending after salary arrival, mid-month financial stress and uncertainty, no visibility into spending behavior, lack of personalized budgeting guidance, and current banking apps that provide transactions but not intelligence. Users need a way to understand their financial behavior—not just view their balance.',
+      "A significant number of Agrobank's customers live on a strict salary cycle, facing stress and uncertainty every month. Key challenges include aggressive spending after salary arrival, mid-month financial stress and uncertainty, no visibility into spending behavior, lack of personalized budgeting guidance, and current banking apps that provide transactions but not intelligence. Users need a way to understand their financial behavior—not just view their balance.",
     approach:
       'Developed Moliyachi, a smart financial assistant fully embedded into Agrobank Mobile that transforms it from a transaction tool into a financial partner. Key features include: AI Spending Insights providing short, actionable explanations of where money goes; Smart Monthly Planning with warnings when spending is too fast and balance predictions; Financial Health Score (0–100) explaining financial stability; Goal Planning where AI calculates timelines and suggests improvements; Personalized Recommendations based on spending patterns, habits, income, and goals; Agrobank Product Matching suggesting Microloans, Deposits, Savings, and Installment options; and AI Shop Agent for finding products with AI-powered recommendations, installment options via Opencard by Agrobank, price comparisons, and personalized insights.',
     outcome:
@@ -85,11 +85,11 @@ const projectData: Record<
     ],
     year: 'March 2025 – July 2025',
     problem:
-      'First-time founders, students, and youth lack structured guidance to transform startup ideas into real products. Unlike traditional incubators or lecture-based courses, there\'s a need for hands-on, efficient startup building without equity demands.',
+      "First-time founders, students, and youth lack structured guidance to transform startup ideas into real products. Unlike traditional incubators or lecture-based courses, there's a need for hands-on, efficient startup building without equity demands.",
     approach:
       'Built an AI-driven platform (dassyor.com) providing structured, personalized, multi-phase roadmaps guiding users through idea validation, MVP development, and future marketing phases. Developed using .NET 8, ASP.NET Web API, Angular 18 (Signals, RxJS, NgRx), Python, React, GCP, OpenAI Assistants API, OpenAI Agents, REST, WebSocket, and Docker. Eliminated equity requirements and focused on efficient, hands-on startup building.',
     outcome:
-      'Platform aligns with Uzbekistan\'s governmental efforts to promote youth entrepreneurship and startup innovation. Provides accessible startup incubation without equity requirements, enabling rapid transformation of ideas into real products.',
+      "Platform aligns with Uzbekistan's governmental efforts to promote youth entrepreneurship and startup innovation. Provides accessible startup incubation without equity requirements, enabling rapid transformation of ideas into real products.",
     links: [
       { label: 'Website', href: 'https://dassyor.com' },
       { label: 'GitHub Repository', href: 'https://github.com/khasanrashidov/dassyor-project' },
@@ -99,7 +99,14 @@ const projectData: Record<
     title: 'Sally',
     description:
       'AI assistant that accelerates pre-sales and Product Development Workshop phases by transforming client meeting transcripts into actionable project plans.',
-    tags: ['NLP', 'AI Assistant', '.NET', 'Vector Database', 'Project Planning Automation', 'Document Generation'],
+    tags: [
+      'NLP',
+      'AI Assistant',
+      '.NET',
+      'Vector Database',
+      'Project Planning Automation',
+      'Document Generation',
+    ],
     year: 'September 2024',
     problem:
       'The pre-sales and Product Development Workshop (PDW) phases require weeks of manual effort to transform client meeting transcripts into actionable project plans, solution ideas, and detailed documentation.',
@@ -132,6 +139,7 @@ const projectData: Record<
       'Developed an autonomous navigation system for a TurtleBot mobile robot, addressing core robotics challenges including SLAM, pose estimation, obstacle avoidance, and waypoint-based navigation. The project integrated sensing, localization, and navigation into a cohesive autonomous system.',
     outcome:
       'The robot autonomously explored and mapped its environment, localized itself within the map, and navigated safely toward predefined waypoints under real-world constraints. Achieved first-place ranking among capstone teams at Inha University in Tashkent.',
+    links: [{ label: 'Demo Video', href: 'https://youtu.be/PQn1-AEw8N8?si=11488C8MVoqavMK0' }],
   },
   huquqai: {
     title: 'HuquqAI — Legal Assistant',
@@ -191,9 +199,7 @@ const projectData: Record<
       'Developed a full-stack web application using ASP.NET Web API, .NET C#, Angular, Material UI, TypeScript, HTML, SCSS, JSON, REST, CQRS + MediatR, MS SQL Server, Azure Blob Storage, SignalR for real-time bidding, Quartz.NET for scheduling, NLog for logging, Google Authentication, Google Maps API, Google Places API, QuestPDF for document generation, ApexCharts for analytics, GitHub Actions for CI/CD, and JWT authorization. Implemented post-auction chat communication features and a pro-subscription model offering analytics.',
     outcome:
       'Delivered an engaging and reliable user experience with real-time bidding capabilities. Platform provides seamless bidding workflows, post-auction communication, and subscription-based analytics. Features user-friendly exploration and transaction processes. Developed as an internship project at Vention.',
-    links: [
-      { label: 'GitHub Repository', href: 'https://github.com/khasanrashidov/Auctionify' },
-    ],
+    links: [{ label: 'GitHub Repository', href: 'https://github.com/khasanrashidov/Auctionify' }],
   },
   'utilization-reports': {
     title: 'Employee Utilization Reports',
@@ -222,8 +228,14 @@ const projectData: Record<
     outcome:
       'Streamlined employee utilization tracking and enabled automated insights for management. The modular API can be integrated into various company systems, reducing manual effort and improving reporting accuracy. Generates weekly reports and sends worklogs to employees by email.',
     links: [
-      { label: 'Web API Repository', href: 'https://github.com/khasanrashidov/utilization-reports' },
-      { label: 'Azure Function Repository', href: 'https://github.com/khasanrashidov/azure-function' },
+      {
+        label: 'Web API Repository',
+        href: 'https://github.com/khasanrashidov/utilization-reports',
+      },
+      {
+        label: 'Azure Function Repository',
+        href: 'https://github.com/khasanrashidov/azure-function',
+      },
     ],
   },
 };
