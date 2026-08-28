@@ -5,7 +5,6 @@ import { Navigation } from '@/components/navigation';
 import { ThemeProvider } from '@/components/theme-provider';
 import { StructuredData } from '@/components/structured-data';
 import { Analytics } from '@/components/analytics';
-import { ClustrMaps } from '@/components/clustrmaps';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -95,7 +94,6 @@ export default function RootLayout({
         >
           <Navigation />
           {children}
-          <ClustrMaps />
         </ThemeProvider>
       </body>
     </html>

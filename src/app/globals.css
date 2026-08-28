@@ -164,13 +164,4 @@
     scrollbar-width: thin;
     scrollbar-color: hsl(var(--border)) transparent;
   }
-
-  /* Hide ClustrMaps widget */
-  #clustrmaps-widget,
-  #clustrmaps-widget-v2,
-  .clustrmaps-map-control,
-  .clustrmaps-map-container {
-    display: none !important;
-    visibility: hidden !important;
-  }
 }
