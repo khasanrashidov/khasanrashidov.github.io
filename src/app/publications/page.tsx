@@ -86,7 +86,7 @@ export default function Publications() {
           {/* Blog Posts */}
           <TabsContent value="writing" className="space-y-6">
             {blogPosts.map((post) => (
-              <Card key={post.id} className="hover:shadow-md transition-all">
+              <Card key={post.id}>
                 <CardHeader>
                   <div className="space-y-3">
                     <CardTitle className="text-lg leading-relaxed">{post.title}</CardTitle>

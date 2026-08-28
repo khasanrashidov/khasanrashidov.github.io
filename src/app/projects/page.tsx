@@ -185,7 +185,7 @@ export default function Projects() {
         <div className="grid gap-6 md:grid-cols-2">
           {projects.map((project) => (
             <Link key={project.id} href={`/projects/${project.id}`} className="group">
-              <Card className="h-full transition-all hover:shadow-md">
+              <Card className="h-full">
                 <CardHeader>
                   <div className="flex items-start justify-between gap-4">
                     <CardTitle className="group-hover:text-primary transition-colors">
