@@ -20,14 +20,14 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL('https://khasanrashidov.github.io'),
   title: {
-    default: 'Khasan Rashidov - Senior Software Engineer',
+    default: 'Khasan Rashidov - Senior Full Stack Engineer',
     template: '%s | Khasan Rashidov',
   },
   description:
     'Senior Software Engineer specializing in .NET, Angular, TypeScript, Python, and AI-powered systems. Building production-scale full-stack applications with cloud-native solutions.',
   keywords: [
     'Khasan Rashidov',
-    'Senior Software Engineer',
+    'Senior Full Stack Engineer',
     '.NET',
     'Angular',
     'TypeScript',
@@ -46,13 +46,13 @@ export const metadata: Metadata = {
     locale: 'en_US',
     url: 'https://khasanrashidov.github.io',
     siteName: 'Khasan Rashidov',
-    title: 'Khasan Rashidov - Senior Software Engineer',
+    title: 'Khasan Rashidov - Senior Full Stack Engineer',
     description:
       'Senior Software Engineer specializing in .NET, Angular, TypeScript, Python, and AI-powered systems. Building production-scale full-stack applications.',
   },
   twitter: {
     card: 'summary',
-    title: 'Khasan Rashidov - Senior Software Engineer',
+    title: 'Khasan Rashidov - Senior Full Stack Engineer',
     description:
       'Senior Software Engineer specializing in .NET, Angular, TypeScript, Python, and AI-powered systems. Building production-scale applications.',
     creator: '@khasanrashidov',

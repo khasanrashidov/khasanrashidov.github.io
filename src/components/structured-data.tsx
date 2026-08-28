@@ -5,7 +5,7 @@ export function StructuredData() {
     name: 'Khasan Rashidov',
     url: 'https://khasanrashidov.github.io',
     image: 'https://khasanrashidov.github.io/avatar.jpg',
-    jobTitle: 'Senior Software Engineer',
+    jobTitle: 'Senior Full Stack Engineer',
     description:
       'Senior Software Engineer specializing in .NET, Angular, TypeScript, Python, and AI-powered systems. Building production-scale full-stack applications with cloud-native solutions.',
     address: {
