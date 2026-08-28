@@ -4,6 +4,7 @@ import { useEffect } from 'react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Tabs, TabsList, TabsTrigger, TabsContent } from '@/components/ui/tabs';
 import { Button } from '@/components/ui/button';
+import { Badge } from '@/components/ui/badge';
 import { ExternalLink } from 'lucide-react';
 
 const publications: never[] = [];
@@ -57,8 +58,8 @@ export default function Publications() {
       <div className="space-y-12">
         {/* Header */}
         <div className="space-y-4">
-          <h1 className="text-4xl font-semibold tracking-tight">Publications</h1>
-          <p className="text-lg text-muted-foreground leading-relaxed">
+          <h1 className="text-4xl">Publications</h1>
+          <p className="text-lg leading-relaxed text-muted-foreground">
             Technical writing and future publications on software engineering, AI integration, and
             full-stack development.
           </p>
@@ -97,12 +98,9 @@ export default function Publications() {
                   <p className="text-sm text-muted-foreground leading-relaxed">{post.excerpt}</p>
                   <div className="flex flex-wrap gap-2">
                     {post.tags.map((tag) => (
-                      <span
-                        key={tag}
-                        className="inline-flex items-center rounded-md bg-secondary px-2 py-1 text-xs font-medium text-secondary-foreground"
-                      >
+                      <Badge key={tag} variant="secondary">
                         {tag}
-                      </span>
+                      </Badge>
                     ))}
                   </div>
                   <Button variant="outline" size="sm" asChild>

@@ -9,17 +9,15 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <main className="container mx-auto max-w-5xl px-6 py-16 md:py-24">
-      <section className="space-y-6">
-        <div className="flex flex-col gap-6 sm:flex-row sm:items-start sm:gap-8">
-          <Avatar className="h-32 w-32 sm:h-40 sm:w-40">
+      <section className="space-y-8">
+        <div className="flex flex-col gap-8 sm:flex-row sm:items-start sm:gap-10">
+          <Avatar className="h-32 w-32 border-2 border-foreground shadow-brutal sm:h-40 sm:w-40">
             <AvatarImage src="/avatar.jpg" alt="Khasan Rashidov" />
             <AvatarFallback className="text-3xl">KR</AvatarFallback>
           </Avatar>
-          <div className="flex-1 space-y-4">
-            <h1 className="text-4xl font-semibold tracking-tight md:text-5xl lg:text-6xl">
-              Khasan Rashidov
-            </h1>
-            <p className="text-xl text-muted-foreground md:text-2xl">
+          <div className="flex-1 space-y-5">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl">Khasan Rashidov</h1>
+            <p className="font-mono text-sm uppercase tracking-[0.18em] text-muted-foreground">
               Senior Full Stack Engineer
             </p>
             <div className="flex flex-wrap gap-2">

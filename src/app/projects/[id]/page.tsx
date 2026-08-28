@@ -261,7 +261,7 @@ export default async function ProjectDetail({ params }: { params: Promise<{ id: 
         {/* Back Link */}
         <Link
           href="/projects"
-          className="inline-flex items-center text-sm text-muted-foreground hover:text-foreground transition-colors"
+          className="inline-flex items-center font-mono text-[11px] font-medium uppercase tracking-[0.16em] hover:underline"
         >
           ← Back to Projects
         </Link>
@@ -269,8 +269,8 @@ export default async function ProjectDetail({ params }: { params: Promise<{ id: 
         {/* Header */}
         <div className="space-y-6">
           <div className="space-y-4">
-            <h1 className="text-4xl font-semibold tracking-tight">{project.title}</h1>
-            <p className="text-lg text-muted-foreground leading-relaxed">{project.description}</p>
+            <h1 className="text-4xl">{project.title}</h1>
+            <p className="text-lg leading-relaxed text-muted-foreground">{project.description}</p>
           </div>
           <div className="flex flex-wrap gap-2">
             {project.tags.map((tag) => (
@@ -286,7 +286,7 @@ export default async function ProjectDetail({ params }: { params: Promise<{ id: 
 
         {/* Problem */}
         <section className="space-y-4">
-          <h2 className="text-2xl font-semibold tracking-tight">Problem</h2>
+          <h2 className="font-mono text-sm font-bold uppercase tracking-[0.18em]">Problem</h2>
           <p className="text-muted-foreground leading-relaxed">{project.problem}</p>
         </section>
 
@@ -294,7 +294,7 @@ export default async function ProjectDetail({ params }: { params: Promise<{ id: 
 
         {/* Approach */}
         <section className="space-y-4">
-          <h2 className="text-2xl font-semibold tracking-tight">Approach</h2>
+          <h2 className="font-mono text-sm font-bold uppercase tracking-[0.18em]">Approach</h2>
           <p className="text-muted-foreground leading-relaxed">{project.approach}</p>
         </section>
 
@@ -302,7 +302,7 @@ export default async function ProjectDetail({ params }: { params: Promise<{ id: 
 
         {/* Outcome */}
         <section className="space-y-4">
-          <h2 className="text-2xl font-semibold tracking-tight">Outcome</h2>
+          <h2 className="font-mono text-sm font-bold uppercase tracking-[0.18em]">Outcome</h2>
           <p className="text-muted-foreground leading-relaxed">{project.outcome}</p>
         </section>
 
@@ -311,7 +311,7 @@ export default async function ProjectDetail({ params }: { params: Promise<{ id: 
           <>
             <Separator />
             <section className="space-y-4">
-              <h2 className="text-2xl font-semibold tracking-tight">Resources</h2>
+              <h2 className="font-mono text-sm font-bold uppercase tracking-[0.18em]">Resources</h2>
               <div className="flex flex-wrap gap-3">
                 {project.links.map((link) => (
                   <Button key={link.label} variant="outline" asChild>

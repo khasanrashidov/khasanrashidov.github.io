@@ -1,13 +1,16 @@
 'use client';
 
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 import { ThemeToggle } from './theme-toggle';
 import { Button } from './ui/button';
+import { cn } from '@/lib/utils';
 
 export const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const pathname = usePathname();
 
   const links = [
     { href: '/about', label: 'About' },
@@ -18,36 +21,42 @@ export const Navigation = () => {
   ];
 
   return (
-    <nav className="sticky top-0 z-50 border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+    <nav className="sticky top-0 z-40 border-b-2 border-foreground bg-background">
       <div className="container mx-auto max-w-5xl px-6">
         <div className="flex h-14 items-center justify-between">
           <Link
             href="/"
-            className="text-sm font-medium tracking-tight hover:text-muted-foreground transition-colors"
+            className="font-mono text-[11px] font-semibold uppercase tracking-[0.22em]"
             onClick={() => setIsOpen(false)}
           >
             Home
           </Link>
 
-          {/* Desktop Navigation */}
-          <div className="hidden items-center gap-6 md:flex">
-            {links.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                className="text-sm hover:text-muted-foreground transition-colors"
-              >
-                {link.label}
-              </Link>
-            ))}
+          <div className="hidden items-center gap-1 md:flex">
+            {links.map((link) => {
+              const isActive = pathname === link.href || pathname.startsWith(`${link.href}/`);
+              return (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  className={cn(
+                    'border-2 px-2 py-1 font-mono text-[11px] font-medium uppercase tracking-[0.16em]',
+                    isActive
+                      ? 'border-foreground bg-secondary text-secondary-foreground'
+                      : 'border-transparent hover:border-foreground hover:bg-secondary'
+                  )}
+                >
+                  {link.label}
+                </Link>
+              );
+            })}
             <ThemeToggle />
           </div>
 
-          {/* Mobile Menu Button */}
           <div className="flex items-center gap-2 md:hidden">
             <ThemeToggle />
             <Button
-              variant="ghost"
+              variant="outline"
               size="icon"
               className="h-9 w-9"
               onClick={() => setIsOpen(!isOpen)}
@@ -58,20 +67,27 @@ export const Navigation = () => {
           </div>
         </div>
 
-        {/* Mobile Navigation */}
         {isOpen && (
-          <div className="animate-in slide-in-from-top-2 fade-in duration-200 border-t border-border/40 py-4 md:hidden">
-            <div className="flex flex-col gap-4">
-              {links.map((link) => (
-                <Link
-                  key={link.href}
-                  href={link.href}
-                  className="text-sm hover:text-muted-foreground transition-colors"
-                  onClick={() => setIsOpen(false)}
-                >
-                  {link.label}
-                </Link>
-              ))}
+          <div className="border-t-2 border-foreground py-3 md:hidden">
+            <div className="flex flex-col gap-1">
+              {links.map((link) => {
+                const isActive = pathname === link.href || pathname.startsWith(`${link.href}/`);
+                return (
+                  <Link
+                    key={link.href}
+                    href={link.href}
+                    className={cn(
+                      'border-2 px-2 py-2 font-mono text-[11px] font-medium uppercase tracking-[0.16em]',
+                      isActive
+                        ? 'border-foreground bg-secondary text-secondary-foreground'
+                        : 'border-transparent hover:border-foreground hover:bg-secondary'
+                    )}
+                    onClick={() => setIsOpen(false)}
+                  >
+                    {link.label}
+                  </Link>
+                );
+              })}
             </div>
           </div>
         )}

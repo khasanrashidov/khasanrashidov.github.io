@@ -13,14 +13,14 @@ export default function About() {
     <main className="container mx-auto max-w-4xl px-6 py-16 md:py-24">
       <div className="space-y-12">
         {/* Header */}
-        <div className="flex flex-col items-center gap-6 text-center sm:flex-row sm:items-start sm:gap-8 sm:text-left">
-          <Avatar className="h-28 w-28 sm:h-32 sm:w-32">
+        <div className="flex flex-col items-start gap-6 sm:flex-row sm:gap-8">
+          <Avatar className="h-28 w-28 border-2 border-foreground shadow-brutal sm:h-32 sm:w-32">
             <AvatarImage src="/avatar.jpg" alt="Khasan Rashidov" />
             <AvatarFallback className="text-2xl">KR</AvatarFallback>
           </Avatar>
           <div className="flex-1 space-y-4">
-            <h1 className="text-4xl font-semibold tracking-tight">About</h1>
-            <p className="text-lg text-muted-foreground leading-relaxed">
+            <h1 className="text-4xl">About</h1>
+            <p className="text-lg leading-relaxed text-muted-foreground">
               Senior Full Stack Engineer building production-scale applications with AI integration
               and cloud-native solutions.
             </p>
@@ -31,7 +31,7 @@ export default function About() {
 
         {/* Bio */}
         <section className="space-y-6">
-          <h2 className="text-2xl font-semibold tracking-tight">Background</h2>
+          <h2 className="font-mono text-sm font-bold uppercase tracking-[0.18em]">Background</h2>
           <div className="space-y-4 text-muted-foreground leading-relaxed">
             <p>
               I&apos;m a Senior Full Stack Engineer with 3+ years of commercial experience building
@@ -73,7 +73,9 @@ export default function About() {
 
         {/* Research Interests */}
         <section className="space-y-6">
-          <h2 className="text-2xl font-semibold tracking-tight">Research Interests</h2>
+          <h2 className="font-mono text-sm font-bold uppercase tracking-[0.18em]">
+            Research Interests
+          </h2>
           <div className="flex flex-wrap gap-2">
             <Badge variant="outline">Full-Stack Development</Badge>
             <Badge variant="outline">AI Agents</Badge>
@@ -96,7 +98,7 @@ export default function About() {
 
         {/* Timeline */}
         <section className="space-y-6">
-          <h2 className="text-2xl font-semibold tracking-tight">Experience</h2>
+          <h2 className="font-mono text-sm font-bold uppercase tracking-[0.18em]">Experience</h2>
           <div className="space-y-6">
             <Card>
               <CardHeader>

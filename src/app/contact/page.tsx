@@ -20,8 +20,8 @@ export default function Contact() {
       <div className="space-y-12">
         {/* Header */}
         <div className="space-y-4">
-          <h1 className="text-4xl font-semibold tracking-tight">Contact</h1>
-          <p className="text-lg text-muted-foreground leading-relaxed">
+          <h1 className="text-4xl">Contact</h1>
+          <p className="text-lg leading-relaxed text-muted-foreground">
             Open to software engineering opportunities, technical collaborations, and consulting
             engagements.
           </p>
@@ -157,7 +157,7 @@ export default function Contact() {
 
         {/* Additional Info */}
         <div className="space-y-4">
-          <h2 className="text-2xl font-semibold tracking-tight">Location</h2>
+          <h2 className="font-mono text-sm font-bold uppercase tracking-[0.18em]">Location</h2>
           <p className="text-muted-foreground leading-relaxed flex items-center">
             <MapPin className="mr-2 h-4 w-4 text-primary" />
             Tashkent, Uzbekistan

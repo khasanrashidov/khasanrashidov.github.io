@@ -1,19 +1,21 @@
 import type { Metadata } from 'next';
-import { Geist, Geist_Mono } from 'next/font/google';
+import { Archivo, IBM_Plex_Mono } from 'next/font/google';
 import './globals.css';
 import { Navigation } from '@/components/navigation';
 import { ThemeProvider } from '@/components/theme-provider';
 import { StructuredData } from '@/components/structured-data';
 import { Analytics } from '@/components/analytics';
+import { SiteFooter } from '@/components/site-footer';
 
-const geistSans = Geist({
-  variable: '--font-geist-sans',
+const archivo = Archivo({
+  variable: '--font-archivo',
   subsets: ['latin'],
 });
 
-const geistMono = Geist_Mono({
-  variable: '--font-geist-mono',
+const ibmPlexMono = IBM_Plex_Mono({
+  variable: '--font-ibm-plex-mono',
   subsets: ['latin'],
+  weight: ['400', '500', '600', '700'],
 });
 
 export const metadata: Metadata = {
@@ -89,7 +91,13 @@ export default function RootLayout({
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
         <StructuredData />
       </head>
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+      <body
+        className={`${archivo.variable} ${ibmPlexMono.variable} flex min-h-screen flex-col antialiased`}
+      >
+        <div
+          aria-hidden
+          className="paper-grain pointer-events-none fixed inset-0 z-0 opacity-[0.07] mix-blend-multiply dark:opacity-[0.12] dark:mix-blend-overlay"
+        />
         <Analytics />
         <ThemeProvider
           attribute="class"
@@ -98,7 +106,10 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <Navigation />
-          {children}
+          <div className="relative z-10 flex-1">{children}</div>
+          <div className="relative z-10">
+            <SiteFooter />
+          </div>
         </ThemeProvider>
       </body>
     </html>

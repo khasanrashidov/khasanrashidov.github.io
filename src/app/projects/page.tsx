@@ -174,24 +174,24 @@ export default function Projects() {
       <div className="space-y-12">
         {/* Header */}
         <div className="space-y-4">
-          <h1 className="text-4xl font-semibold tracking-tight">Projects</h1>
-          <p className="text-lg text-muted-foreground max-w-2xl leading-relaxed">
+          <h1 className="text-4xl">Projects</h1>
+          <p className="max-w-2xl text-lg leading-relaxed text-muted-foreground">
             AI-powered applications, full-stack systems, and innovative software solutions spanning
             finance, startup incubation, automation, robotics, and legal assistance.
           </p>
         </div>
 
         {/* Project Grid */}
-        <div className="grid gap-6 md:grid-cols-2">
+        <div className="grid gap-8 md:grid-cols-2">
           {projects.map((project) => (
             <Link key={project.id} href={`/projects/${project.id}`} className="group">
               <Card className="h-full">
                 <CardHeader>
                   <div className="flex items-start justify-between gap-4">
-                    <CardTitle className="group-hover:text-primary transition-colors">
+                    <CardTitle className="underline-offset-4 group-hover:underline">
                       {project.title}
                     </CardTitle>
-                    <span className="text-xs text-muted-foreground whitespace-nowrap">
+                    <span className="font-mono text-[10px] uppercase tracking-[0.14em] text-muted-foreground whitespace-nowrap">
                       {project.year}
                     </span>
                   </div>
