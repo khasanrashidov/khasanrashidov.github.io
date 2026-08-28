@@ -23,17 +23,22 @@ export const metadata: Metadata = {
     template: '%s | Khasan Rashidov',
   },
   description:
-    'Senior Software Engineer specializing in .NET, Angular, TypeScript, Python, and AI-powered systems. Building production-scale full-stack applications with cloud-native solutions.',
+    'Senior Full Stack Engineer specializing in .NET, Angular, TypeScript, Python, and AI-powered systems. Building production-scale applications with cloud-native solutions on AWS, Azure, and GCP.',
   keywords: [
     'Khasan Rashidov',
     'Senior Full Stack Engineer',
     '.NET',
     'Angular',
     'TypeScript',
+    'Python',
+    'Kotlin',
+    'Flutter',
     'AI',
     'Machine Learning',
     'Full Stack Engineer',
+    'AWS',
     'Azure',
+    'GCP',
     'Software Engineering',
     'Tashkent',
     'Uzbekistan',
@@ -47,13 +52,13 @@ export const metadata: Metadata = {
     siteName: 'Khasan Rashidov',
     title: 'Khasan Rashidov - Senior Full Stack Engineer',
     description:
-      'Senior Software Engineer specializing in .NET, Angular, TypeScript, Python, and AI-powered systems. Building production-scale full-stack applications.',
+      'Senior Full Stack Engineer specializing in .NET, Angular, TypeScript, Python, and AI-powered systems. Building production-scale applications with cloud-native solutions on AWS, Azure, and GCP.',
   },
   twitter: {
     card: 'summary',
     title: 'Khasan Rashidov - Senior Full Stack Engineer',
     description:
-      'Senior Software Engineer specializing in .NET, Angular, TypeScript, Python, and AI-powered systems. Building production-scale applications.',
+      'Senior Full Stack Engineer specializing in .NET, Angular, TypeScript, Python, and AI-powered systems. Building production-scale applications with cloud-native solutions on AWS, Azure, and GCP.',
     creator: '@khasanrashidov',
   },
   robots: {

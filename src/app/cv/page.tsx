@@ -3,6 +3,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Separator } from '@/components/ui/separator';
 import { Button } from '@/components/ui/button';
 import { Download, ExternalLink } from 'lucide-react';
+import Link from 'next/link';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -51,8 +52,9 @@ export default function CV() {
                 <p className="text-sm text-muted-foreground">Member of Dean&apos;s List</p>
                 <p className="text-sm text-muted-foreground">
                   <strong>Core Courses:</strong> Artificial Intelligence, Big Data Analytics,
-                  Capstone Design, Multimedia Computing, Software Engineering, Database Application
-                  & Design, Computer Networks
+                  Capstone Design, Multimedia Computing, Digital Logic Circuit, Software Engineering,
+                  Database Application & Design, Computer Networks, Circuit and Lab, Computer
+                  Architecture
                 </p>
                 <p className="text-sm text-muted-foreground">
                   <strong>Programming Courses:</strong> Object-Oriented Programming, Application
@@ -95,6 +97,67 @@ export default function CV() {
                 <CardTitle className="text-lg">Senior Software Engineer</CardTitle>
                 <p className="text-sm text-muted-foreground flex items-center gap-1">
                   <a
+                    href="https://exadel.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-primary transition-colors flex items-center gap-1"
+                  >
+                    Exadel
+                    <ExternalLink className="h-3 w-3" />
+                  </a>{' '}
+                  • May 2026 – Present
+                </p>
+                <p className="text-xs text-muted-foreground mt-1">
+                  Stack: .NET Aspire, C#, Aurora PostgreSQL, Valkey, AWS (EKS, SNS, SQS, CloudWatch),
+                  Wolverine, Dapper, RabbitMQ, xUnit, Moq, NLog, OpenTelemetry, Microservices,
+                  Distributed Systems, Event-Driven Architecture, Caching (L1, L2, L3), Database
+                  Denormalization and Optimization, AI Agentic Development
+                </p>
+              </CardHeader>
+              <CardContent>
+                <ul className="list-disc space-y-1 pl-5 text-sm text-muted-foreground">
+                  <li>
+                    Architect and optimize a legacy Access Control List (ACL) system built on .NET
+                    Framework, modernizing it into a scalable, high-performance microservices
+                    architecture using .NET (C#), Aspire and ASP.NET Core with contemporary design
+                    patterns
+                  </li>
+                  <li>
+                    Develop robust data access layers using Dapper for fine-grained query control,
+                    implement database migrations with DbUp for version control and schema
+                    management, and optimize Aurora PostgreSQL queries with indexing strategies to
+                    enhance performance
+                  </li>
+                  <li>
+                    Leverage message-driven patterns with Wolverine for distributed event processing
+                    and implement caching with Valkey to reduce database load and improve system
+                    throughput
+                  </li>
+                  <li>
+                    Deploy and manage containerized microservices on AWS EKS (Kubernetes), configure
+                    SNS/SQS for reliable asynchronous messaging, and utilize CloudWatch for
+                    monitoring production systems at scale
+                  </li>
+                  <li>
+                    Implement distributed tracing and observability solutions using OpenTelemetry
+                    and NLog to monitor system health, track performance metrics, and identify
+                    bottlenecks in production environments
+                  </li>
+                  <li>
+                    Develop comprehensive test suites covering unit, integration, functional,
+                    architectural, and cross-cutting tests using xUnit and Moq, with extensive
+                    failure mode testing to ensure system resilience and maintainability across
+                    complex microservice architectures
+                  </li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle className="text-lg">Software Engineer</CardTitle>
+                <p className="text-sm text-muted-foreground flex items-center gap-1">
+                  <a
                     href="https://ventionteams.com/"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -103,7 +166,7 @@ export default function CV() {
                     Vention
                     <ExternalLink className="h-3 w-3" />
                   </a>{' '}
-                  • August 2023 – Present
+                  • August 2023 – May 2026
                 </p>
                 <p className="text-xs text-muted-foreground mt-1">
                   Stack: .NET, Angular, TypeScript, Python, Azure, RabbitMQ, RxJS, NgRx, EF Core, MS
@@ -114,12 +177,15 @@ export default function CV() {
                 <ul className="list-disc space-y-1 pl-5 text-sm text-muted-foreground">
                   <li>
                     Design, develop, and maintain production-scale full-stack systems using Angular
-                    (RxJS, NgRx) and ASP.NET Core, leading backend development of high-performance
-                    RESTful APIs with Entity Framework Core
+                    and ASP.NET Core, leading backend development of high-performance RESTful APIs
+                    with Entity Framework Core and applying best practices in API design and service
+                    decomposition
                   </li>
                   <li>
                     Integrate AI-powered systems, including LLMs and external AI services/APIs, into
-                    production applications and collaborate on AI-assisted workflows
+                    production applications and collaborate on AI-assisted workflows to enable
+                    intelligent features such as automation, data analysis, and decision support
+                    while ensuring reliability, security, and performance
                   </li>
                   <li>
                     Optimize MS SQL Server databases through query tuning, indexing strategies, and
@@ -127,11 +193,12 @@ export default function CV() {
                   </li>
                   <li>
                     Architect and deploy cloud-native solutions on Microsoft Azure utilizing Azure
-                    Functions, Blob Storage, and DevOps best practices
+                    Functions, Blob Storage, and DevOps best practices for deployment, monitoring,
+                    and scalability
                   </li>
                   <li>
-                    Participate in technical decision-making, code reviews, and mentoring of junior
-                    engineers
+                    Participate in technical decision-making, code reviews, and mentoring of
+                    interns, contributing to improved code quality and engineering standards
                   </li>
                 </ul>
               </CardContent>
@@ -168,14 +235,16 @@ export default function CV() {
                     collection and reporting workflows
                   </li>
                   <li>
-                    Developed and deployed Azure Functions for automated weekly email reporting
+                    Developed and deployed Azure Functions for automated weekly email reporting,
+                    improving operational efficiency
                   </li>
                   <li>
                     Configured GitLab CI/CD pipelines to automate builds, testing, and deployments
+                    using GitLab runners
                   </li>
                   <li>
                     Implemented unit and integration testing using xUnit and Moq, achieving 90%+
-                    test coverage
+                    test coverage and ensuring high reliability
                   </li>
                   <li>
                     Successfully completed the internship program, ranking top 1 among interns based
@@ -200,10 +269,10 @@ export default function CV() {
                 <Badge variant="secondary">Python</Badge>
                 <Badge variant="secondary">C/C++</Badge>
                 <Badge variant="secondary">TypeScript</Badge>
-                <Badge variant="secondary">JavaScript</Badge>
                 <Badge variant="secondary">Java</Badge>
                 <Badge variant="secondary">Kotlin</Badge>
                 <Badge variant="secondary">Golang</Badge>
+                <Badge variant="secondary">Flutter (Dart)</Badge>
               </div>
             </div>
 
@@ -211,22 +280,29 @@ export default function CV() {
               <h3 className="mb-2 text-sm font-medium">Web Technologies & Frameworks</h3>
               <div className="flex flex-wrap gap-2">
                 <Badge variant="outline">Angular</Badge>
+                <Badge variant="outline">Next.js</Badge>
+                <Badge variant="outline">Vue.js</Badge>
                 <Badge variant="outline">TypeScript</Badge>
                 <Badge variant="outline">HTML</Badge>
                 <Badge variant="outline">SCSS</Badge>
+                <Badge variant="outline">Tailwind CSS</Badge>
                 <Badge variant="outline">RxJS</Badge>
                 <Badge variant="outline">NgRx</Badge>
+                <Badge variant="outline">Nx Monorepo</Badge>
               </div>
             </div>
 
             <div>
               <h3 className="mb-2 text-sm font-medium">.NET Frameworks & Tools</h3>
               <div className="flex flex-wrap gap-2">
+                <Badge variant="outline">Aspire</Badge>
                 <Badge variant="outline">ASP.NET Core</Badge>
                 <Badge variant="outline">ADO.NET</Badge>
                 <Badge variant="outline">EF Core</Badge>
                 <Badge variant="outline">SignalR</Badge>
                 <Badge variant="outline">In-memory Caching</Badge>
+                <Badge variant="outline">Wolverine</Badge>
+                <Badge variant="outline">Dapper</Badge>
               </div>
             </div>
 
@@ -248,8 +324,10 @@ export default function CV() {
                 <Badge variant="outline">T-SQL</Badge>
                 <Badge variant="outline">MySQL</Badge>
                 <Badge variant="outline">PostgreSQL</Badge>
+                <Badge variant="outline">Amazon Aurora</Badge>
                 <Badge variant="outline">MongoDB</Badge>
                 <Badge variant="outline">Redis</Badge>
+                <Badge variant="outline">Valkey</Badge>
               </div>
             </div>
 
@@ -274,6 +352,7 @@ export default function CV() {
                 <Badge variant="outline">NuGet</Badge>
                 <Badge variant="outline">npm</Badge>
                 <Badge variant="outline">Docker</Badge>
+                <Badge variant="outline">Kubernetes</Badge>
                 <Badge variant="outline">RabbitMQ</Badge>
                 <Badge variant="outline">Azure</Badge>
                 <Badge variant="outline">AWS</Badge>
@@ -282,13 +361,17 @@ export default function CV() {
             </div>
 
             <div>
-              <h3 className="mb-2 text-sm font-medium">AI, Data Science, Analytics</h3>
+              <h3 className="mb-2 text-sm font-medium">AI, Data Science, Analytics & Tools</h3>
               <div className="flex flex-wrap gap-2">
-                <Badge variant="outline">Python (NumPy, pandas, scikit-learn)</Badge>
+                <Badge variant="outline">Python (NumPy, pandas, scikit-learn, matplotlib)</Badge>
                 <Badge variant="outline">TensorFlow</Badge>
                 <Badge variant="outline">PyTorch</Badge>
+                <Badge variant="outline">OpenCV</Badge>
                 <Badge variant="outline">LLMs</Badge>
                 <Badge variant="outline">RAG</Badge>
+                <Badge variant="outline">Vector Databases</Badge>
+                <Badge variant="outline">Semantic Search</Badge>
+                <Badge variant="outline">Sentence Transformers</Badge>
                 <Badge variant="outline">AI System Integrations</Badge>
               </div>
             </div>
@@ -303,6 +386,138 @@ export default function CV() {
                 <Badge variant="secondary">Turkish (Basic)</Badge>
               </div>
             </div>
+          </div>
+        </section>
+
+        <Separator />
+
+        {/* Projects */}
+        <section className="space-y-6">
+          <h2 className="text-2xl font-semibold tracking-tight">Projects</h2>
+          <div className="space-y-4">
+            <Card>
+              <CardHeader>
+                <CardTitle className="text-lg">
+                  <Link href="/projects/moliyachi" className="hover:text-primary transition-colors">
+                    Moliyachi
+                  </Link>
+                </CardTitle>
+                <p className="text-sm text-muted-foreground">November 2025 – December 2025</p>
+                <p className="text-xs text-muted-foreground mt-1">
+                  Keywords: AI, personal finance, predictive analytics, LLMs, LangChain, Python,
+                  super app integration
+                </p>
+              </CardHeader>
+              <CardContent>
+                <p className="text-sm text-muted-foreground">
+                  Moliyachi is integrated into the Agrobank Mobile app to transform raw banking data
+                  into actionable financial guidance. It analyzes users&apos; transactions to
+                  generate spending insights, predicts monthly balances, issues overspending
+                  warnings, calculates financial goals, and provides a financial health score. The
+                  platform delivers personalized recommendations, matches users with relevant
+                  banking products, and includes an AI-powered shopping assistant.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle className="text-lg">
+                  <Link href="/projects/dassyor" className="hover:text-primary transition-colors">
+                    Dassyor
+                  </Link>
+                </CardTitle>
+                <p className="text-sm text-muted-foreground">March 2025 – July 2025</p>
+                <p className="text-xs text-muted-foreground mt-1">
+                  Keywords: AI, startup incubation, MVP development, .NET, Angular, Python, OpenAI
+                  Agents, GCP
+                </p>
+              </CardHeader>
+              <CardContent>
+                <p className="text-sm text-muted-foreground">
+                  Dassyor empowers first-time founders, students, and youth to rapidly transform
+                  startup ideas into real products. Unlike traditional incubators, the platform
+                  provides a structured, personalized, multi-phase roadmap that guides users through
+                  idea validation, MVP development, and marketing strategies. It eliminates equity
+                  requirements and aligns with Uzbekistan&apos;s national initiatives to promote
+                  youth entrepreneurship.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle className="text-lg">
+                  <Link href="/projects/sally" className="hover:text-primary transition-colors">
+                    Sally
+                  </Link>
+                </CardTitle>
+                <p className="text-sm text-muted-foreground">September 2024</p>
+                <p className="text-xs text-muted-foreground mt-1">
+                  Keywords: NLP, AI assistant, .NET, Vector Database, project planning automation,
+                  document generation
+                </p>
+              </CardHeader>
+              <CardContent>
+                <p className="text-sm text-muted-foreground">
+                  Sally accelerates the pre-sales and Product Development Workshop (PDW) phases of
+                  software development by transforming client meeting transcripts into actionable
+                  project plans. The system automatically generates multiple solution ideas,
+                  supports sales and technical lead approvals, and produces detailed documentation
+                  including feature breakdowns, estimates, team structures, and development
+                  roadmaps.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle className="text-lg">
+                  <Link
+                    href="/projects/autonomous-robot-slam"
+                    className="hover:text-primary transition-colors"
+                  >
+                    Autonomous Robot SLAM and Navigation — Capstone Design Project
+                  </Link>
+                </CardTitle>
+                <p className="text-sm text-muted-foreground">March 2024</p>
+                <p className="text-xs text-muted-foreground mt-1">
+                  Keywords: robotics, SLAM, autonomous navigation, localization, obstacle avoidance,
+                  motion planning
+                </p>
+              </CardHeader>
+              <CardContent>
+                <p className="text-sm text-muted-foreground">
+                  Capstone project developing an autonomous navigation system for a TurtleBot mobile
+                  robot, addressing SLAM, pose estimation, obstacle avoidance, and waypoint-based
+                  navigation. The robot autonomously explored and mapped its environment, localized
+                  itself, and navigated safely toward predefined waypoints. Achieved first-place
+                  ranking among capstone teams.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle className="text-lg">
+                  <Link href="/projects/huquqai" className="hover:text-primary transition-colors">
+                    HuquqAI — Legal Assistant
+                  </Link>
+                </CardTitle>
+                <p className="text-sm text-muted-foreground">February 2024</p>
+                <p className="text-xs text-muted-foreground mt-1">
+                  Keywords: AI assistant, OpenAI API, NLP, RAG, Python, Flask, React, PostgreSQL
+                </p>
+              </CardHeader>
+              <CardContent>
+                <p className="text-sm text-muted-foreground">
+                  HuquqAI leverages open legal data, including the constitution, laws, and social
+                  codes, to provide users with accurate legal guidance. Utilizing the OpenAI
+                  Assistants API (powered by GPT-4 Turbo), it interprets user queries and delivers
+                  reliable responses in English and Russian.
+                </p>
+              </CardContent>
+            </Card>
           </div>
         </section>
 
@@ -355,7 +570,9 @@ export default function CV() {
                 <CardTitle className="text-lg">
                   Third Award, ICPC 2022 and ICPC 2023 Regional Contests
                 </CardTitle>
-                <p className="text-sm text-muted-foreground">November 2022</p>
+                <p className="text-sm text-muted-foreground">
+                  William B. Poucher, Ph. D., ICPC Executive Director • November 2022
+                </p>
               </CardHeader>
               <CardContent className="space-y-4">
                 <p className="text-sm text-muted-foreground">
@@ -382,7 +599,9 @@ export default function CV() {
                 <CardTitle className="text-lg">
                   Winner, Best Educational Project — NASA Space Apps Challenge
                 </CardTitle>
-                <p className="text-sm text-muted-foreground">October 2022</p>
+                <p className="text-sm text-muted-foreground">
+                  NASA Earth Science Division (Space Apps) • October 2022
+                </p>
               </CardHeader>
               <CardContent className="space-y-4">
                 <p className="text-sm text-muted-foreground">
@@ -453,7 +672,7 @@ export default function CV() {
               <CardContent>
                 <p className="text-sm text-muted-foreground">
                   Five-time Academic Excellence Scholarship recipient, awarded for ranking among the
-                  top 10 GPAs out of 300 students, including multiple 1st-place rankings.
+                  top 10 GPAs out of 300 students (top 3%), including multiple 1st-place rankings.
                 </p>
               </CardContent>
             </Card>

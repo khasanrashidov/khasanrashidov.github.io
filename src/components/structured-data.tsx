@@ -7,7 +7,7 @@ export function StructuredData() {
     image: 'https://khasanrashidov.github.io/avatar.jpg',
     jobTitle: 'Senior Full Stack Engineer',
     description:
-      'Senior Software Engineer specializing in .NET, Angular, TypeScript, Python, and AI-powered systems. Building production-scale full-stack applications with cloud-native solutions.',
+      'Senior Full Stack Engineer specializing in .NET, Angular, TypeScript, Python, and AI-powered systems. Building production-scale applications with cloud-native solutions on AWS, Azure, and GCP.',
     address: {
       '@type': 'PostalAddress',
       addressLocality: 'Tashkent',
@@ -24,14 +24,19 @@ export function StructuredData() {
     knowsAbout: [
       '.NET',
       'Angular',
-      'TypeScript',
       'Python',
-      'AI/ML',
-      'Cloud Computing',
+      'TypeScript',
+      'Kotlin',
+      'Flutter',
+      'AI Agents',
+      'Machine Learning',
+      'AWS',
       'Azure',
+      'GCP',
+      'Microservices',
+      'Distributed Systems',
       'Full Stack Development',
       'Software Engineering',
-      'Database Optimization',
     ],
     alumniOf: {
       '@type': 'EducationalOrganization',
@@ -39,7 +44,8 @@ export function StructuredData() {
     },
     worksFor: {
       '@type': 'Organization',
-      name: 'Vention',
+      name: 'Exadel',
+      url: 'https://exadel.com/',
     },
   };
 

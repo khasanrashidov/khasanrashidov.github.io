@@ -21,8 +21,8 @@ export default function About() {
           <div className="flex-1 space-y-4">
             <h1 className="text-4xl font-semibold tracking-tight">About</h1>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Senior Software Engineer building production-scale full-stack applications with AI
-              integration and cloud-native solutions.
+              Senior Full Stack Engineer building production-scale applications with AI integration
+              and cloud-native solutions.
             </p>
           </div>
         </div>
@@ -34,18 +34,20 @@ export default function About() {
           <h2 className="text-2xl font-semibold tracking-tight">Background</h2>
           <div className="space-y-4 text-muted-foreground leading-relaxed">
             <p>
-              I&apos;m a Full Stack Software Engineer with 3+ years of commercial experience
-              building scalable and maintainable web applications using .NET, Python, and Angular.
-              Currently, I work as a Senior Software Engineer at Vention, where I design and develop
-              production-scale full-stack systems using Angular and ASP.NET Core. My work focuses on
-              building high-performance RESTful APIs, integrating AI-powered systems including LLMs
-              into production applications, and architecting cloud-native solutions on Microsoft
+              I&apos;m a Senior Full Stack Engineer with 3+ years of commercial experience building
+              scalable and maintainable systems using .NET, Python, Angular, and TypeScript.
+              Currently, I work as a Senior Software Engineer at Exadel, where I modernize
+              production Access Control List systems into high-performance microservices using .NET
+              Aspire, ASP.NET Core, Aurora PostgreSQL, and AWS. Previously at Vention, I designed
+              production-scale full-stack systems with Angular and ASP.NET Core, integrated LLMs
+              into production applications, and architected cloud-native solutions on Microsoft
               Azure.
             </p>
             <p>
-              I&apos;m familiar with cloud platforms like Azure and Google Cloud Platform (GCP),
-              including tools such as Azure Functions and Blob Storage. I&apos;m skilled in
-              designing and optimizing relational databases (SQL Server, PostgreSQL, MySQL) with a
+              I&apos;m familiar with cloud platforms like AWS, Azure, and Google Cloud Platform
+              (GCP), including tools such as EKS, SNS, SQS, CloudWatch, Azure Functions, and Blob
+              Storage. I&apos;m skilled in designing and optimizing relational databases (SQL
+              Server, PostgreSQL, Amazon Aurora, MySQL) and caching layers (Redis, Valkey), with a
               good understanding of database design, query optimization, and principles like SOLID,
               OOP, ACID, and FIRST. I focus on writing clean, efficient, and maintainable code.
             </p>
@@ -59,10 +61,10 @@ export default function About() {
               I&apos;m experienced in Agile environments (Scrum, Kanban) and capable of integrating
               AI-driven features into applications. I&apos;m a motivated team player who also works
               well independently, always open to learning and exploring new technologies. My
-              experience spans full-stack development, AI integration, database optimization, and
-              cloud architecture. I&apos;ve worked on projects ranging from AI-powered financial
-              analytics platforms to autonomous robotics systems, and I&apos;m passionate about
-              building scalable, intelligent software solutions.
+              experience spans full-stack development, AI integration, distributed systems, database
+              optimization, and cloud architecture. I&apos;ve worked on projects ranging from
+              AI-powered financial analytics platforms to autonomous robotics systems, and I&apos;m
+              passionate about building scalable, intelligent software solutions.
             </p>
           </div>
         </section>
@@ -74,12 +76,17 @@ export default function About() {
           <h2 className="text-2xl font-semibold tracking-tight">Research Interests</h2>
           <div className="flex flex-wrap gap-2">
             <Badge variant="outline">Full-Stack Development</Badge>
+            <Badge variant="outline">AI Agents</Badge>
             <Badge variant="outline">AI/ML Integration</Badge>
             <Badge variant="outline">Cloud Architecture</Badge>
             <Badge variant="outline">.NET & Angular</Badge>
             <Badge variant="outline">Python</Badge>
-            <Badge variant="outline">Database Optimization</Badge>
             <Badge variant="outline">Microservices</Badge>
+            <Badge variant="outline">Distributed Systems</Badge>
+            <Badge variant="outline">Database Optimization</Badge>
+            <Badge variant="outline">AWS</Badge>
+            <Badge variant="outline">Azure</Badge>
+            <Badge variant="outline">GCP</Badge>
             <Badge variant="outline">DevOps</Badge>
             <Badge variant="outline">Software Engineering</Badge>
           </div>
@@ -94,7 +101,14 @@ export default function About() {
             <Card>
               <CardHeader>
                 <CardTitle className="text-lg">Senior Software Engineer</CardTitle>
-                <p className="text-sm text-muted-foreground">Vention • August 2023 – Present</p>
+                <p className="text-sm text-muted-foreground">Exadel • May 2026 – Present</p>
+              </CardHeader>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle className="text-lg">Software Engineer</CardTitle>
+                <p className="text-sm text-muted-foreground">Vention • August 2023 – May 2026</p>
               </CardHeader>
             </Card>
 
