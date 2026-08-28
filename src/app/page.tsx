@@ -22,6 +22,14 @@ export default function Home() {
             <p className="text-xl text-muted-foreground md:text-2xl">
               Senior Full Stack Engineer
             </p>
+            <p className="max-w-2xl text-lg leading-relaxed text-muted-foreground">
+              I currently work as a Senior Software Engineer at Exadel, modernizing production
+              systems into scalable .NET microservices on AWS. Previously at Vention, I built
+              full-stack applications with Angular and ASP.NET Core, integrated LLMs into
+              production, and shipped cloud-native solutions on Azure. I graduated from Inha
+              University in Tashkent with a B.S. in Computer Science and Software Engineering,
+              ranking 4th out of 300.
+            </p>
           </div>
         </div>
         <div className="flex flex-wrap gap-2">
