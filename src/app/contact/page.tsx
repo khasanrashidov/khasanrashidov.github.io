@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Separator } from '@/components/ui/separator';
 import { Button } from '@/components/ui/button';
+import { PageLead } from '@/components/page-lead';
 import { Check, Copy, ExternalLink, MapPin } from 'lucide-react';
 
 export default function Contact() {
@@ -16,16 +17,15 @@ export default function Contact() {
     setTimeout(() => setCopied(false), 2000);
   };
   return (
-    <main className="container mx-auto max-w-3xl px-6 py-16 md:py-24">
-      <div className="space-y-12">
+    <main className="container mx-auto max-w-3xl px-6 py-20 md:py-28">
+      <div className="space-y-16">
         {/* Header */}
-        <div className="space-y-4">
-          <h1 className="text-4xl">Contact</h1>
+        <PageLead title="Contact">
           <p className="text-lg leading-relaxed text-muted-foreground">
             Open to software engineering opportunities, technical collaborations, and consulting
             engagements.
           </p>
-        </div>
+        </PageLead>
 
         <Separator />
 
@@ -157,7 +157,7 @@ export default function Contact() {
 
         {/* Additional Info */}
         <div className="space-y-4">
-          <h2 className="text-sm font-bold uppercase tracking-[0.18em]">Location</h2>
+          <h2 className="text-xl">Location</h2>
           <p className="text-muted-foreground leading-relaxed flex items-center">
             <MapPin className="mr-2 h-4 w-4 text-primary" />
             Tashkent, Uzbekistan

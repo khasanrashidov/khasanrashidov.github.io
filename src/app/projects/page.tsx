@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
+import { PageLead } from '@/components/page-lead';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -170,16 +171,15 @@ const projects = [
 
 export default function Projects() {
   return (
-    <main className="container mx-auto max-w-5xl px-6 py-16 md:py-24">
-      <div className="space-y-12">
+    <main className="container mx-auto max-w-5xl px-6 py-20 md:py-28">
+      <div className="space-y-16">
         {/* Header */}
-        <div className="space-y-4">
-          <h1 className="text-4xl">Projects</h1>
-          <p className="max-w-2xl text-lg leading-relaxed text-muted-foreground">
+        <PageLead title="Projects">
+          <p className="text-lg leading-relaxed text-muted-foreground">
             AI-powered applications, full-stack systems, and innovative software solutions spanning
             finance, startup incubation, automation, robotics, and legal assistance.
           </p>
-        </div>
+        </PageLead>
 
         {/* Project Grid */}
         <div className="grid gap-8 md:grid-cols-2">
@@ -191,7 +191,7 @@ export default function Projects() {
                     <CardTitle className="underline-offset-4 group-hover:underline">
                       {project.title}
                     </CardTitle>
-                    <span className="text-[10px] font-medium uppercase tracking-[0.14em] text-muted-foreground whitespace-nowrap">
+                    <span className="whitespace-nowrap text-sm text-muted-foreground">
                       {project.year}
                     </span>
                   </div>

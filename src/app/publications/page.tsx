@@ -6,6 +6,7 @@ import { Tabs, TabsList, TabsTrigger, TabsContent } from '@/components/ui/tabs';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { ExternalLink } from 'lucide-react';
+import { PageLead } from '@/components/page-lead';
 
 const publications: never[] = [];
 
@@ -54,16 +55,15 @@ export default function Publications() {
   }, []);
 
   return (
-    <main className="container mx-auto max-w-4xl px-6 py-16 md:py-24">
-      <div className="space-y-12">
+    <main className="container mx-auto max-w-3xl px-6 py-20 md:py-28">
+      <div className="space-y-16">
         {/* Header */}
-        <div className="space-y-4">
-          <h1 className="text-4xl">Publications</h1>
+        <PageLead title="Publications">
           <p className="text-lg leading-relaxed text-muted-foreground">
             Technical writing and future publications on software engineering, AI integration, and
             full-stack development.
           </p>
-        </div>
+        </PageLead>
 
         {/* Tabs */}
         <Tabs defaultValue="papers" className="space-y-8">

@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
+import { Geist, Newsreader } from 'next/font/google';
 import './globals.css';
 import { Navigation } from '@/components/navigation';
 import { ThemeProvider } from '@/components/theme-provider';
@@ -7,9 +7,15 @@ import { StructuredData } from '@/components/structured-data';
 import { Analytics } from '@/components/analytics';
 import { SiteFooter } from '@/components/site-footer';
 
-const inter = Inter({
-  variable: '--font-inter',
+const geist = Geist({
+  variable: '--font-geist',
   subsets: ['latin'],
+});
+
+const newsreader = Newsreader({
+  variable: '--font-newsreader',
+  subsets: ['latin'],
+  style: ['normal', 'italic'],
 });
 
 export const metadata: Metadata = {
@@ -93,12 +99,8 @@ export default function RootLayout({
         <StructuredData />
       </head>
       <body
-        className={`${inter.variable} flex min-h-screen flex-col font-sans antialiased`}
+        className={`${geist.variable} ${newsreader.variable} flex min-h-screen flex-col font-sans antialiased`}
       >
-        <div
-          aria-hidden
-          className="paper-grain pointer-events-none fixed inset-0 z-0 opacity-[0.07] mix-blend-multiply dark:opacity-[0.12] dark:mix-blend-overlay"
-        />
         <Analytics />
         <ThemeProvider
           attribute="class"
@@ -107,10 +109,8 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <Navigation />
-          <div className="relative z-10 flex-1">{children}</div>
-          <div className="relative z-10">
-            <SiteFooter />
-          </div>
+          <div className="flex flex-1 flex-col">{children}</div>
+          <SiteFooter />
         </ThemeProvider>
       </body>
     </html>

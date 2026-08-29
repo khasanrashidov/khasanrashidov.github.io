@@ -256,20 +256,20 @@ export default async function ProjectDetail({ params }: { params: Promise<{ id: 
   }
 
   return (
-    <main className="container mx-auto max-w-4xl px-6 py-16 md:py-24">
-      <div className="space-y-12">
+    <main className="container mx-auto max-w-3xl px-6 py-20 md:py-28">
+      <div className="space-y-16">
         {/* Back Link */}
         <Link
           href="/projects"
-          className="inline-flex items-center text-[11px] font-medium uppercase tracking-[0.16em] hover:underline"
+          className="inline-flex items-center text-sm text-muted-foreground hover:text-foreground"
         >
           ← Back to Projects
         </Link>
 
         {/* Header */}
         <div className="space-y-6">
-          <div className="space-y-4">
-            <h1 className="text-4xl">{project.title}</h1>
+          <div className="space-y-5">
+            <h1 className="text-4xl md:text-5xl">{project.title}</h1>
             <p className="text-lg leading-relaxed text-muted-foreground">{project.description}</p>
           </div>
           <div className="flex flex-wrap gap-2">
@@ -286,7 +286,7 @@ export default async function ProjectDetail({ params }: { params: Promise<{ id: 
 
         {/* Problem */}
         <section className="space-y-4">
-          <h2 className="text-sm font-bold uppercase tracking-[0.18em]">Problem</h2>
+          <h2 className="text-xl">Problem</h2>
           <p className="text-muted-foreground leading-relaxed">{project.problem}</p>
         </section>
 
@@ -294,7 +294,7 @@ export default async function ProjectDetail({ params }: { params: Promise<{ id: 
 
         {/* Approach */}
         <section className="space-y-4">
-          <h2 className="text-sm font-bold uppercase tracking-[0.18em]">Approach</h2>
+          <h2 className="text-xl">Approach</h2>
           <p className="text-muted-foreground leading-relaxed">{project.approach}</p>
         </section>
 
@@ -302,7 +302,7 @@ export default async function ProjectDetail({ params }: { params: Promise<{ id: 
 
         {/* Outcome */}
         <section className="space-y-4">
-          <h2 className="text-sm font-bold uppercase tracking-[0.18em]">Outcome</h2>
+          <h2 className="text-xl">Outcome</h2>
           <p className="text-muted-foreground leading-relaxed">{project.outcome}</p>
         </section>
 
@@ -311,7 +311,7 @@ export default async function ProjectDetail({ params }: { params: Promise<{ id: 
           <>
             <Separator />
             <section className="space-y-4">
-              <h2 className="text-sm font-bold uppercase tracking-[0.18em]">Resources</h2>
+              <h2 className="text-xl">Resources</h2>
               <div className="flex flex-wrap gap-3">
                 {project.links.map((link) => (
                   <Button key={link.label} variant="outline" asChild>

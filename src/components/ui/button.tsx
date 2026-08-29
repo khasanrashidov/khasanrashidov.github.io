@@ -5,19 +5,15 @@ import { cva, type VariantProps } from 'class-variance-authority';
 import { cn } from '@/lib/utils';
 
 const buttonVariants = cva(
-  "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-none border-2 border-foreground text-sm font-bold tracking-tight transition-none disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground",
+  "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md border text-sm font-medium transition-colors disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:ring-2 focus-visible:ring-ring/30",
   {
     variants: {
       variant: {
-        default:
-          'bg-primary text-primary-foreground shadow-brutal hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-none',
-        destructive:
-          'bg-destructive text-white shadow-brutal hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-none',
-        outline:
-          'bg-background text-foreground shadow-brutal hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-none hover:bg-secondary',
-        secondary:
-          'bg-secondary text-secondary-foreground shadow-brutal hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-none',
-        ghost: 'border-transparent hover:border-foreground hover:bg-secondary',
+        default: 'border-transparent bg-primary text-primary-foreground hover:bg-primary/90',
+        destructive: 'border-transparent bg-destructive text-white hover:bg-destructive/90',
+        outline: 'border-border bg-transparent text-foreground hover:bg-muted',
+        secondary: 'border-transparent bg-secondary text-secondary-foreground hover:bg-muted',
+        ghost: 'border-transparent hover:bg-muted',
         link: 'border-transparent underline-offset-4 hover:underline',
       },
       size: {

@@ -12,15 +12,13 @@ export const metadata: Metadata = {
 
 export default function CV() {
   return (
-    <main className="container mx-auto max-w-4xl px-6 py-16 md:py-24">
-      <div className="space-y-12">
+    <main className="container mx-auto max-w-3xl px-6 py-20 md:py-28">
+      <div className="space-y-16">
         {/* Header */}
-        <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
-          <div className="space-y-4">
-            <h1 className="text-4xl">Curriculum Vitae</h1>
-            <p className="text-sm font-medium uppercase tracking-[0.16em] text-muted-foreground">
-              Academic and professional experience
-            </p>
+        <div className="flex flex-col gap-6 sm:flex-row sm:items-start sm:justify-between">
+          <div className="space-y-5">
+            <h1 className="text-4xl md:text-5xl">Curriculum Vitae</h1>
+            <p className="text-lg text-muted-foreground">Academic and professional experience</p>
           </div>
           <Button asChild>
             <a href="/CV.pdf" target="_blank" rel="noopener noreferrer">
@@ -34,7 +32,7 @@ export default function CV() {
 
         {/* Education */}
         <section className="space-y-6">
-          <h2 className="text-sm font-bold uppercase tracking-[0.18em]">Education</h2>
+          <h2 className="text-xl">Education</h2>
           <div className="space-y-6">
             <Card>
               <CardHeader>
@@ -90,7 +88,7 @@ export default function CV() {
 
         {/* Experience */}
         <section className="space-y-6">
-          <h2 className="text-sm font-bold uppercase tracking-[0.18em]">Work Experience</h2>
+          <h2 className="text-xl">Work Experience</h2>
           <div className="space-y-6">
             <Card>
               <CardHeader>
@@ -260,7 +258,7 @@ export default function CV() {
 
         {/* Skills */}
         <section className="space-y-6">
-          <h2 className="text-sm font-bold uppercase tracking-[0.18em]">Skills & Expertise</h2>
+          <h2 className="text-xl">Skills & Expertise</h2>
           <div className="space-y-4">
             <div>
               <h3 className="mb-2 text-sm font-medium">Core Programming & Platforms</h3>
@@ -393,7 +391,7 @@ export default function CV() {
 
         {/* Projects */}
         <section className="space-y-6">
-          <h2 className="text-sm font-bold uppercase tracking-[0.18em]">Projects</h2>
+          <h2 className="text-xl">Projects</h2>
           <div className="space-y-4">
             <Card>
               <CardHeader>
@@ -525,7 +523,7 @@ export default function CV() {
 
         {/* Awards & Honors */}
         <section className="space-y-6">
-          <h2 className="text-sm font-bold uppercase tracking-[0.18em]">Awards & Achievements</h2>
+          <h2 className="text-xl">Awards & Achievements</h2>
           <div className="space-y-4">
             <Card>
               <CardHeader>
@@ -683,7 +681,7 @@ export default function CV() {
 
         {/* Extracurricular Activities */}
         <section className="space-y-6">
-          <h2 className="text-sm font-bold uppercase tracking-[0.18em]">Extracurricular Activities</h2>
+          <h2 className="text-xl">Extracurricular Activities</h2>
           <div className="space-y-4">
             <Card>
               <CardHeader>

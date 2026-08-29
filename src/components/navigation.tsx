@@ -21,18 +21,19 @@ export const Navigation = () => {
   ];
 
   return (
-    <nav className="sticky top-0 z-40 border-b-2 border-foreground bg-background">
+    <nav className="sticky top-0 z-40 border-b border-border/80 bg-background">
       <div className="container mx-auto max-w-5xl px-6">
-        <div className="flex h-14 items-center justify-between">
+        <div className="flex h-16 items-center justify-between">
           <Link
             href="/"
-            className="text-[11px] font-semibold uppercase tracking-[0.22em]"
+            className="font-display text-[17px] tracking-tight"
             onClick={() => setIsOpen(false)}
           >
-            Home
+            <span className="sm:hidden">Khasan</span>
+            <span className="hidden sm:inline">Khasan Rashidov</span>
           </Link>
 
-          <div className="hidden items-center gap-1 md:flex">
+          <div className="hidden items-center gap-7 md:flex">
             {links.map((link) => {
               const isActive = pathname === link.href || pathname.startsWith(`${link.href}/`);
               return (
@@ -40,10 +41,8 @@ export const Navigation = () => {
                   key={link.href}
                   href={link.href}
                   className={cn(
-                    'border-2 px-2 py-1 text-[11px] font-medium uppercase tracking-[0.16em]',
-                    isActive
-                      ? 'border-foreground bg-secondary text-secondary-foreground'
-                      : 'border-transparent hover:border-foreground hover:bg-secondary'
+                    'text-[13px] tracking-wide transition-colors',
+                    isActive ? 'text-foreground' : 'text-muted-foreground hover:text-foreground'
                   )}
                 >
                   {link.label}
@@ -56,7 +55,7 @@ export const Navigation = () => {
           <div className="flex items-center gap-2 md:hidden">
             <ThemeToggle />
             <Button
-              variant="outline"
+              variant="ghost"
               size="icon"
               className="h-9 w-9"
               onClick={() => setIsOpen(!isOpen)}
@@ -68,7 +67,7 @@ export const Navigation = () => {
         </div>
 
         {isOpen && (
-          <div className="border-t-2 border-foreground py-3 md:hidden">
+          <div className="border-t border-border/80 py-4 md:hidden">
             <div className="flex flex-col gap-1">
               {links.map((link) => {
                 const isActive = pathname === link.href || pathname.startsWith(`${link.href}/`);
@@ -77,10 +76,8 @@ export const Navigation = () => {
                     key={link.href}
                     href={link.href}
                     className={cn(
-                      'border-2 px-2 py-2 text-[11px] font-medium uppercase tracking-[0.16em]',
-                      isActive
-                        ? 'border-foreground bg-secondary text-secondary-foreground'
-                        : 'border-transparent hover:border-foreground hover:bg-secondary'
+                      'px-1 py-2 text-sm',
+                      isActive ? 'text-foreground' : 'text-muted-foreground'
                     )}
                     onClick={() => setIsOpen(false)}
                   >
