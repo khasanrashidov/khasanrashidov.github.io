@@ -17,7 +17,7 @@ export default function Home() {
           </Avatar>
           <div className="flex-1 space-y-5">
             <h1 className="text-4xl md:text-5xl lg:text-6xl">Khasan Rashidov</h1>
-            <p className="font-mono text-sm uppercase tracking-[0.18em] text-muted-foreground">
+            <p className="text-sm font-medium uppercase tracking-[0.18em] text-muted-foreground">
               Senior Full Stack Engineer
             </p>
             <div className="flex flex-wrap gap-2">

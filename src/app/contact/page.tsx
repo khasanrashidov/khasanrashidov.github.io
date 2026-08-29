@@ -157,7 +157,7 @@ export default function Contact() {
 
         {/* Additional Info */}
         <div className="space-y-4">
-          <h2 className="font-mono text-sm font-bold uppercase tracking-[0.18em]">Location</h2>
+          <h2 className="text-sm font-bold uppercase tracking-[0.18em]">Location</h2>
           <p className="text-muted-foreground leading-relaxed flex items-center">
             <MapPin className="mr-2 h-4 w-4 text-primary" />
             Tashkent, Uzbekistan

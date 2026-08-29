@@ -184,14 +184,14 @@ export default function Projects() {
         {/* Project Grid */}
         <div className="grid gap-8 md:grid-cols-2">
           {projects.map((project) => (
-            <Link key={project.id} href={`/projects/${project.id}`} className="group">
+            <Link key={project.id} href={`/projects/${project.id}`} className="group block">
               <Card className="h-full">
                 <CardHeader>
                   <div className="flex items-start justify-between gap-4">
                     <CardTitle className="underline-offset-4 group-hover:underline">
                       {project.title}
                     </CardTitle>
-                    <span className="font-mono text-[10px] uppercase tracking-[0.14em] text-muted-foreground whitespace-nowrap">
+                    <span className="text-[10px] font-medium uppercase tracking-[0.14em] text-muted-foreground whitespace-nowrap">
                       {project.year}
                     </span>
                   </div>

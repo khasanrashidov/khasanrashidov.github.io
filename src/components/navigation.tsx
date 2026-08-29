@@ -26,7 +26,7 @@ export const Navigation = () => {
         <div className="flex h-14 items-center justify-between">
           <Link
             href="/"
-            className="font-mono text-[11px] font-semibold uppercase tracking-[0.22em]"
+            className="text-[11px] font-semibold uppercase tracking-[0.22em]"
             onClick={() => setIsOpen(false)}
           >
             Home
@@ -40,7 +40,7 @@ export const Navigation = () => {
                   key={link.href}
                   href={link.href}
                   className={cn(
-                    'border-2 px-2 py-1 font-mono text-[11px] font-medium uppercase tracking-[0.16em]',
+                    'border-2 px-2 py-1 text-[11px] font-medium uppercase tracking-[0.16em]',
                     isActive
                       ? 'border-foreground bg-secondary text-secondary-foreground'
                       : 'border-transparent hover:border-foreground hover:bg-secondary'
@@ -77,7 +77,7 @@ export const Navigation = () => {
                     key={link.href}
                     href={link.href}
                     className={cn(
-                      'border-2 px-2 py-2 font-mono text-[11px] font-medium uppercase tracking-[0.16em]',
+                      'border-2 px-2 py-2 text-[11px] font-medium uppercase tracking-[0.16em]',
                       isActive
                         ? 'border-foreground bg-secondary text-secondary-foreground'
                         : 'border-transparent hover:border-foreground hover:bg-secondary'

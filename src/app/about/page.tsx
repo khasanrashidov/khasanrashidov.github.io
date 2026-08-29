@@ -31,7 +31,7 @@ export default function About() {
 
         {/* Bio */}
         <section className="space-y-6">
-          <h2 className="font-mono text-sm font-bold uppercase tracking-[0.18em]">Background</h2>
+          <h2 className="text-sm font-bold uppercase tracking-[0.18em]">Background</h2>
           <div className="space-y-4 text-muted-foreground leading-relaxed">
             <p>
               I&apos;m a Senior Full Stack Engineer with 3+ years of commercial experience building
@@ -73,7 +73,7 @@ export default function About() {
 
         {/* Research Interests */}
         <section className="space-y-6">
-          <h2 className="font-mono text-sm font-bold uppercase tracking-[0.18em]">
+          <h2 className="text-sm font-bold uppercase tracking-[0.18em]">
             Research Interests
           </h2>
           <div className="flex flex-wrap gap-2">
@@ -98,7 +98,7 @@ export default function About() {
 
         {/* Timeline */}
         <section className="space-y-6">
-          <h2 className="font-mono text-sm font-bold uppercase tracking-[0.18em]">Experience</h2>
+          <h2 className="text-sm font-bold uppercase tracking-[0.18em]">Experience</h2>
           <div className="space-y-6">
             <Card>
               <CardHeader>
