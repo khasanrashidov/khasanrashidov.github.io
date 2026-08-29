@@ -29,8 +29,7 @@ export const Navigation = () => {
             className="font-display text-[17px] tracking-tight"
             onClick={() => setIsOpen(false)}
           >
-            <span className="sm:hidden">Khasan</span>
-            <span className="hidden sm:inline">Khasan Rashidov</span>
+            Home
           </Link>
 
           <div className="hidden items-center gap-7 md:flex">
