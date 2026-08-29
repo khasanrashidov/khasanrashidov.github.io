@@ -787,6 +787,17 @@ export default function CV() {
                 </CardTitle>
                 <p className="text-sm text-muted-foreground">Anthropic • August 2026</p>
               </CardHeader>
+              <CardContent>
+                <a
+                  href="https://anthropic-partners.skilljar.com/claude-certified-architect-foundations-certification"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-1 text-xs text-muted-foreground hover:text-primary transition-colors"
+                >
+                  Certificate
+                  <ExternalLink className="h-3 w-3" />
+                </a>
+              </CardContent>
             </Card>
 
             <Card>
@@ -794,6 +805,17 @@ export default function CV() {
                 <CardTitle className="text-lg">Deep Dive: C#</CardTitle>
                 <p className="text-sm text-muted-foreground">Dometrain • March 2026</p>
               </CardHeader>
+              <CardContent>
+                <a
+                  href="https://dometrain.com/course/deep-dive-csharp/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-1 text-xs text-muted-foreground hover:text-primary transition-colors"
+                >
+                  Course
+                  <ExternalLink className="h-3 w-3" />
+                </a>
+              </CardContent>
             </Card>
 
             <Card>
@@ -801,6 +823,17 @@ export default function CV() {
                 <CardTitle className="text-lg">Hands-On: Learn PostgreSQL</CardTitle>
                 <p className="text-sm text-muted-foreground">Dometrain • February 2026</p>
               </CardHeader>
+              <CardContent>
+                <a
+                  href="https://dometrain.com/course/hands-on-learn-postgresql/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-1 text-xs text-muted-foreground hover:text-primary transition-colors"
+                >
+                  Course
+                  <ExternalLink className="h-3 w-3" />
+                </a>
+              </CardContent>
             </Card>
 
             <Card>
@@ -808,6 +841,17 @@ export default function CV() {
                 <CardTitle className="text-lg">Intro to Machine Learning</CardTitle>
                 <p className="text-sm text-muted-foreground">Kaggle • January 2026</p>
               </CardHeader>
+              <CardContent>
+                <a
+                  href="https://www.kaggle.com/learn/intro-to-machine-learning"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-1 text-xs text-muted-foreground hover:text-primary transition-colors"
+                >
+                  Course
+                  <ExternalLink className="h-3 w-3" />
+                </a>
+              </CardContent>
             </Card>
           </div>
         </section>

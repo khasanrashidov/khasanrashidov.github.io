@@ -9,7 +9,7 @@ function Tabs({ className, ...props }: React.ComponentProps<typeof TabsPrimitive
   return (
     <TabsPrimitive.Root
       data-slot="tabs"
-      className={cn('flex flex-col gap-2', className)}
+      className={cn('flex flex-col gap-2 [overflow-anchor:none]', className)}
       {...props}
     />
   );
@@ -42,10 +42,27 @@ function TabsTrigger({ className, ...props }: React.ComponentProps<typeof TabsPr
 }
 
 function TabsContent({ className, ...props }: React.ComponentProps<typeof TabsPrimitive.Content>) {
+  const contentRef = React.useRef<HTMLDivElement>(null);
+
+  React.useLayoutEffect(() => {
+    const node = contentRef.current;
+    if (!node) return;
+
+    const originalFocus = node.focus.bind(node);
+    node.focus = (options?: FocusOptions) => {
+      originalFocus({ ...options, preventScroll: true });
+    };
+
+    return () => {
+      node.focus = originalFocus;
+    };
+  }, []);
+
   return (
     <TabsPrimitive.Content
+      ref={contentRef}
       data-slot="tabs-content"
-      className={cn('flex-1 outline-none', className)}
+      className={cn('flex-1 outline-none [overflow-anchor:none]', className)}
       {...props}
     />
   );

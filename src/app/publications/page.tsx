@@ -66,7 +66,16 @@ export default function Publications() {
         </PageLead>
 
         {/* Tabs */}
-        <Tabs defaultValue="papers" className="space-y-8">
+        <Tabs
+          defaultValue="papers"
+          className="space-y-8"
+          onValueChange={() => {
+            const { scrollX, scrollY } = window;
+            requestAnimationFrame(() => {
+              window.scrollTo({ left: scrollX, top: scrollY, behavior: 'instant' });
+            });
+          }}
+        >
           <TabsList>
             <TabsTrigger value="papers">Research Papers</TabsTrigger>
             <TabsTrigger value="writing">Blog Posts</TabsTrigger>
