@@ -789,7 +789,7 @@ export default function CV() {
               </CardHeader>
               <CardContent>
                 <a
-                  href="https://anthropic-partners.skilljar.com/claude-certified-architect-foundations-certification"
+                  href="https://www.credly.com/badges/a69f9854-d7cb-41be-b94c-54c220dfa63b"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-1 text-xs text-muted-foreground hover:text-primary transition-colors"
@@ -807,12 +807,12 @@ export default function CV() {
               </CardHeader>
               <CardContent>
                 <a
-                  href="https://dometrain.com/course/deep-dive-csharp/"
+                  href="https://dometrain.com/certificate/BHBba5fh7pOnM5/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-1 text-xs text-muted-foreground hover:text-primary transition-colors"
                 >
-                  Course
+                  Certificate
                   <ExternalLink className="h-3 w-3" />
                 </a>
               </CardContent>
@@ -825,12 +825,12 @@ export default function CV() {
               </CardHeader>
               <CardContent>
                 <a
-                  href="https://dometrain.com/course/hands-on-learn-postgresql/"
+                  href="https://dometrain.com/certificate/N4QND3kT9k2EUf/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-1 text-xs text-muted-foreground hover:text-primary transition-colors"
                 >
-                  Course
+                  Certificate
                   <ExternalLink className="h-3 w-3" />
                 </a>
               </CardContent>
@@ -843,12 +843,12 @@ export default function CV() {
               </CardHeader>
               <CardContent>
                 <a
-                  href="https://www.kaggle.com/learn/intro-to-machine-learning"
+                  href="https://www.kaggle.com/learn/certification/khasanr/intro-to-machine-learning"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-1 text-xs text-muted-foreground hover:text-primary transition-colors"
                 >
-                  Course
+                  Certificate
                   <ExternalLink className="h-3 w-3" />
                 </a>
               </CardContent>
