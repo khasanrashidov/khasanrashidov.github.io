@@ -1,16 +1,11 @@
 import type { Metadata } from 'next';
-import { Geist, Newsreader } from 'next/font/google';
+import { Newsreader } from 'next/font/google';
 import './globals.css';
 import { Navigation } from '@/components/navigation';
 import { ThemeProvider } from '@/components/theme-provider';
 import { StructuredData } from '@/components/structured-data';
 import { Analytics } from '@/components/analytics';
 import { SiteFooter } from '@/components/site-footer';
-
-const geist = Geist({
-  variable: '--font-geist',
-  subsets: ['latin'],
-});
 
 const newsreader = Newsreader({
   variable: '--font-newsreader',
@@ -99,7 +94,7 @@ export default function RootLayout({
         <StructuredData />
       </head>
       <body
-        className={`${geist.variable} ${newsreader.variable} flex min-h-screen flex-col font-sans antialiased`}
+        className={`${newsreader.variable} flex min-h-screen flex-col font-sans antialiased`}
       >
         <Analytics />
         <ThemeProvider
