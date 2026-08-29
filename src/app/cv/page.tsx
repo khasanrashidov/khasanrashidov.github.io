@@ -370,6 +370,9 @@ export default function CV() {
                 <Badge variant="outline">Vector Databases</Badge>
                 <Badge variant="outline">Semantic Search</Badge>
                 <Badge variant="outline">Sentence Transformers</Badge>
+                <Badge variant="outline">Multi-Agent Orchestration</Badge>
+                <Badge variant="outline">Tool & MCP Design</Badge>
+                <Badge variant="outline">Generative AI Architecture</Badge>
                 <Badge variant="outline">AI System Integrations</Badge>
               </div>
             </div>
@@ -767,6 +770,44 @@ export default function CV() {
                   adherence to testing protocols and maintaining a fair testing environment.
                 </p>
               </CardContent>
+            </Card>
+          </div>
+        </section>
+
+        <Separator />
+
+        {/* Certifications */}
+        <section className="space-y-6">
+          <h2 className="text-xl">Certifications</h2>
+          <div className="space-y-4">
+            <Card>
+              <CardHeader>
+                <CardTitle className="text-lg">
+                  Claude Certified Architect — Foundations
+                </CardTitle>
+                <p className="text-sm text-muted-foreground">Anthropic • August 2026</p>
+              </CardHeader>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle className="text-lg">Deep Dive: C#</CardTitle>
+                <p className="text-sm text-muted-foreground">Dometrain • March 2026</p>
+              </CardHeader>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle className="text-lg">Hands-On: Learn PostgreSQL</CardTitle>
+                <p className="text-sm text-muted-foreground">Dometrain • February 2026</p>
+              </CardHeader>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle className="text-lg">Intro to Machine Learning</CardTitle>
+                <p className="text-sm text-muted-foreground">Kaggle • January 2026</p>
+              </CardHeader>
             </Card>
           </div>
         </section>
